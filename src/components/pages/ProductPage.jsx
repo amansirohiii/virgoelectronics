@@ -66,6 +66,7 @@ function ProductPage() {
             </div>
           </div>
         </div>
+        <br />
         <FeaturedSlider />
         {/* <Newsletter /> */}
         <Footer />
