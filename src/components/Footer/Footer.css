@@ -41,17 +41,6 @@
 	vertical-align: top;
 }
 
-/* Footer left */
-
-
-
-/* The company logo */
-
-.footer-distributed h3{
-	color:  #ffffff;
-	font: normal 1.5rem 'Open Sans', cursive;
-	margin: 0;
-}
 
 
 
@@ -64,11 +53,12 @@
 	line-height: 1.8;
   font-weight:400;
 	text-decoration: none;
-	color:  inherit;
+	color:  white;
+	font-size: 0.8rem;
 }
 
 .footer-distributed .footer-company-name{
-	color:  white;
+	color:  red !important;
 	font-size: 1.5rem;
 	font-weight: normal;
 	margin: 0;
@@ -100,7 +90,7 @@
 .footer-distributed .footer-links a:before {
   content: "|";
   font-weight:300;
-  font-size: 1rem;
+  font-size: 0.8rem;
   left: 0;
   color: #fff;
   display: inline-block;
@@ -137,5 +127,16 @@
 	.footer-distributed .footer-center i{
 		margin-left: 0;
 	}
+	.footer-distributed .footer-links a:before {
+		content: "|";
+		font-weight:300;
+		font-size: 0.8rem;
+		left: 0;
+		color: #fff;
+		display: inline-block;
+		padding-right: 5px;
+		padding-left: 5px;
+
+	  }
 
 }

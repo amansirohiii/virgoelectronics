@@ -63,7 +63,7 @@ const Navbar = () => {
               {/* <li className="nav-item"> <a className="nav-link mx-3" aria-current="page" href="/">Home</a> </li> */}{" "}
               <li className="nav-item">
                 {" "}
-                <a className="nav-link mx-3" href="/products">
+                <a className="nav-link mx-3" href="/products/all">
                   {" "}
                   Products{" "}
                 </a>{" "}

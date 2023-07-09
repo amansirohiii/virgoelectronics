@@ -1,15 +1,15 @@
-import CategoriesItemLamps from "./CategoriesItemLamps";
-import Footer from "../Footer";
-import Newsletter from "../Newsletter";
+import CategoriesItemCeiling from "./CategoriesItemCeiling";
+// import Footer from "../Footer";
+// import Newsletter from "../Newsletter";
 
-function Lamps() {
+function Chairs() {
   return (
     <>
-      <CategoriesItemLamps />
-      <Newsletter />
-      <Footer />
+      <CategoriesItemCeiling />
+      {/* <Newsletter />
+      <Footer /> */}
     </>
   );
 }
 
-export default Lamps;
+export default Chairs;

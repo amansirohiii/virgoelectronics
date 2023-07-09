@@ -1,15 +1,15 @@
-import CategoriesItemElectronics from "./CategoriesItemElectronics";
-import Footer from "../Footer";
-import Newsletter from "../Newsletter";
+import CategoriesItemCeiling from "./CategoriesItemCeiling";
+// import Footer from "../Footer";
+// import Newsletter from "../Newsletter";
 
-function Electronics() {
+function Chairs() {
   return (
     <>
-      <CategoriesItemElectronics />
-      <Newsletter />
-      <Footer />
+      <CategoriesItemCeiling />
+      {/* <Newsletter />
+      <Footer /> */}
     </>
   );
 }
 
-export default Electronics;
+export default Chairs;

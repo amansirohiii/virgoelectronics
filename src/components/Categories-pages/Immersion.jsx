@@ -1,15 +1,15 @@
-import CategoriesItemKitchen from "./CategoriesItemKitchen";
-import Footer from "../Footer";
-import Newsletter from "../Newsletter";
+import CategoriesItemCeiling from "./CategoriesItemCeiling";
+// import Footer from "../Footer";
+// import Newsletter from "../Newsletter";
 
-function Kitchen() {
+function Chairs() {
   return (
     <>
-      <CategoriesItemKitchen />
-      <Newsletter />
-      <Footer />
+      <CategoriesItemCeiling />
+      {/* <Newsletter />
+      <Footer /> */}
     </>
   );
 }
 
-export default Kitchen;
+export default Chairs;
