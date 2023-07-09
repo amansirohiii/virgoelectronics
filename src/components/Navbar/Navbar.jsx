@@ -27,7 +27,7 @@ const Navbar = () => {
     <div className="navbar-wrapper">
       {" "}
       <nav
-        className={`navbar fixed-top navbar-expand-lg navbar-light px-lg-5 px-sm-3 ${
+        className={`navbar fixed-top navbar-expand-lg navbar-light ${
           isMenuOpen ? "menu-open" : ""
         }`}
         style={{ zIndex: "1", fontSize: "1rem", boxShadow: "0pc 0.5px 0.5px" }}
@@ -58,7 +58,7 @@ const Navbar = () => {
             id="navbarSupportedContent"
           >
             {" "}
-            <ul className="navbar-nav ml-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav ml-auto ">
               {" "}
               {/* <li className="nav-item"> <a className="nav-link mx-3" aria-current="page" href="/">Home</a> </li> */}{" "}
               <li className="nav-item">

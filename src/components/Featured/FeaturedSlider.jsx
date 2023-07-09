@@ -13,7 +13,7 @@ export default function FeaturedSlider() {
   };
 
   return (
-    <div className="trending mt-5">
+    <div className="trending ">
       <div className="container">
         <div className="title-btns">
           <h3>Featured Products</h3>

@@ -7,11 +7,14 @@ import Navbar from './components/Navbar/Navbar';
 import FeaturedSlider from './components/Featured/FeaturedSlider';
 import './index.css';
 
+import Footer from './components/Footer/Footer';
+
 function App() {
   return (
     <>
   <Navbar/>
   <FeaturedSlider/>
+  <Footer/>
    </>
   );
 }

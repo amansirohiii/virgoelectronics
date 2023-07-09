@@ -3,7 +3,7 @@ import { items } from "../AllData";
 import { Link } from "react-router-dom";
 
 export default function FeaturedItem() {
-  const filteredItems = items.filter((item) => item.id >= 1);
+  const filteredItems = items.filter((item) => item.id >=1);
   return (
     <>
       {filteredItems.map((item) => (
@@ -17,7 +17,7 @@ export default function FeaturedItem() {
             </div>
             <div className="item-description">
               <p>{item.description}</p>
-              <p className="item-price">{item.price}$</p>
+              {/* <p className="item-price">{item.price}$</p> */}
             </div>
           </Link>
         </div>

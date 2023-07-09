@@ -3,28 +3,46 @@
 *{
     font-family: 'Roboto', sans-serif !important;
     /* font-family: 'Ubuntu', sans-serif; */
-    color: black !important;
 }
+@media (min-width: 1200px) {
+  .container-fluid {
+   margin: 0 12rem 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .container-fluid {
+    margin: 0 1rem 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .container-fluid {
+    margin: 0 1rem 0;
+  }
+}
+
 nav {
   background:rgba(255, 255, 255, 0.5);
-  color: black;
   position:fixed;
   z-index:999999;
   width:100%;
  -webkit-backdrop-filter:saturate(180%) blur(20px);
 backdrop-filter: saturate(180%) blur(30px);
-
   }
   .navbar-nav {
     margin-left: auto;
-    color: black;
+    color: black ;
     font-size: 1rem;
+  }
+  .navbar-light .navbar-nav .nav-link{
+    color: black;
   }
 
   a:link, a:visited, a:hover, a:active{
     text-decoration: none;
   }
-  .navbar-toggler {
+  .navbar-toggler  {
     border: none;
     outline: none;
 
