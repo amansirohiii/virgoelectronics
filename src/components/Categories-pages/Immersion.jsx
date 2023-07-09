@@ -1,15 +1,15 @@
-import CategoriesItemCeiling from "./CategoriesItemCeiling";
-// import Footer from "../Footer";
+import CategoriesItemImmersion from "./CategoriesItemImmersion";
+import Footer from "../Footer/Footer";
 // import Newsletter from "../Newsletter";
 
-function Chairs() {
+export default function Immersion() {
   return (
     <>
-      <CategoriesItemCeiling />
-      {/* <Newsletter />
-      <Footer /> */}
+      <CategoriesItemImmersion />
+      {/* <Newsletter /> */}
+      <Footer />
     </>
   );
 }
 
-export default Chairs;
+

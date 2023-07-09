@@ -1,15 +1,15 @@
 import CategoriesItemCeiling from "./CategoriesItemCeiling";
-// import Footer from "../Footer";
+import Footer from "../Footer/Footer";
 // import Newsletter from "../Newsletter";
 
-function Chairs() {
+export default function Ceiling() {
   return (
     <>
       <CategoriesItemCeiling />
-      {/* <Newsletter />
-      <Footer /> */}
+      {/* <Newsletter /> */}
+      <Footer />
     </>
   );
 }
 
-export default Chairs;
+

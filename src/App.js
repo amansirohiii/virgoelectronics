@@ -16,8 +16,7 @@ import Pedestal from './components/Categories-pages/Pedestal';
 import Heater from './components/Categories-pages/Heater';
 import Immersion from './components/Categories-pages/Immersion';
 import ProductPage from '../src/components/pages/ProductPage';
-// import SkinCare from './components/Categories/SkinCare';
-
+import Geyser from './components/Categories-pages/Geyser';
 function App() {
   return (
     <>
@@ -33,7 +32,7 @@ function App() {
           <Route path="pedestal" element={<Pedestal />} />
           <Route path="heater" element={<Heater />} />
           <Route path="immersion" element={<Immersion />} />
-          {/* <Route path="skin-care" element={<SkinCare />} /> */}
+          <Route path="geryser" element={<Geyser />} />
         </Route>
         <Route path="categories/product/:id" element={<ProductPage />} />
         </Routes>

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 function CategoriesHeader() {
-  const [btnName, setBtnName] = useState("All");
+  const [btnName, setBtnName] = useState("all");
 
   const handleBtnName = (e) => {
     setBtnName(e);
@@ -13,12 +13,13 @@ function CategoriesHeader() {
       <div className="container">
         <div className="catego-header">
           <div className="title-home">
-            <Link onClick={() => window.scrollTo(0, 0)} to="/">
+            <Link onClick={() => window.top(0, 0)} to="/">
               <i className="fa-solid fa-angle-left"></i> Home
             </Link>
             <h3>{btnName}</h3>
           </div>
           <div className="filter-btns">
+
             <Link to="all" onClick={() => handleBtnName("all")}>
               <button>All</button>
             </Link>
@@ -41,11 +42,11 @@ function CategoriesHeader() {
             <Link to="immersion">
               <button onClick={() => handleBtnName("immersion")}>Immersion</button>
             </Link>
-            <Link to="skin-care">
-              <button onClick={() => handleBtnName("skin care")}>
-                Skin Care
+            {/* <Link to="geyser">
+              <button onClick={() => handleBtnName("geyser")}>
+                Geyser
               </button>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

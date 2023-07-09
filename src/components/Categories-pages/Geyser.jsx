@@ -1,15 +1,15 @@
-import CategoriesItemCeiling from "./CategoriesItemCeiling";
-// import Footer from "../Footer";
+import CategoriesItemGeyser from "./CategoriesItemGeyser";
+import Footer from "../Footer/Footer";
 // import Newsletter from "../Newsletter";
 
-function Chairs() {
+export default function Geyser() {
   return (
     <>
-      <CategoriesItemCeiling />
-      {/* <Newsletter />
-      <Footer /> */}
+      <CategoriesItemGeyser />
+      {/* <Newsletter /> */}
+      <Footer />
     </>
   );
 }
 
-export default Chairs;
+
