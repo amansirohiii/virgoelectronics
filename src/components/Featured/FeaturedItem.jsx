@@ -3,7 +3,7 @@ import { items } from "../AllData";
 import { Link } from "react-router-dom";
 
 export default function FeaturedItem() {
-  const filteredItems = items.filter((item) => item.id >= 4);
+  const filteredItems = items.filter((item) => item.id >= 1);
   return (
     <>
       {filteredItems.map((item) => (
