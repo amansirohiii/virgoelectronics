@@ -16,7 +16,8 @@ import Pedestal from './components/Categories-pages/Pedestal';
 import Heater from './components/Categories-pages/Heater';
 import Immersion from './components/Categories-pages/Immersion';
 import ProductPage from '../src/components/pages/ProductPage';
-import Geyser from './components/Categories-pages/Geyser';
+// import Geyser from './components/Categories-pages/Geyser';
+import ScrollButton from './components/Scroller/ScrollButton';
 function App() {
   return (
     <>
@@ -32,10 +33,11 @@ function App() {
           <Route path="pedestal" element={<Pedestal />} />
           <Route path="heater" element={<Heater />} />
           <Route path="immersion" element={<Immersion />} />
-          <Route path="geryser" element={<Geyser />} />
+          {/* <Route path="geyser" element={<Geyser />} /> */}
         </Route>
         <Route path="categories/product/:id" element={<ProductPage />} />
         </Routes>
+        <ScrollButton />
    </>
   );
 }
