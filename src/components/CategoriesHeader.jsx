@@ -14,7 +14,7 @@ function CategoriesHeader() {
         <div className="catego-header">
           <div className="title-home">
             <Link onClick={() => window.top(0, 0)} to="/">
-              <i className="fa-solid fa-angle-left"></i> <span className="homee">Home</span>
+              <i className="fa-solid fa-angle-left"></i> <span className="home">Home</span>
             </Link>
             <h3>{btnName}</h3>
           </div>
