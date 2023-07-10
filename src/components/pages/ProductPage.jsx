@@ -25,13 +25,13 @@ function ProductPage() {
               <div className="big-img">
                 <img src={image} alt="product" />
               </div>
-              <div className="small-imgs">
+              {/* <div className="small-imgs">
                 <img
                   onMouseOver={changeImage}
                   src={item[0].img}
                   alt="product"
                 />
-                {/* <img
+                <img
                   onMouseOver={changeImage}
                   src={item[0].otherImgs[0]}
                   alt="product"
@@ -40,8 +40,8 @@ function ProductPage() {
                   onMouseOver={changeImage}
                   src={item[0].otherImgs[1]}
                   alt="product"
-                /> */}
-              </div>
+                />
+              </div> */}
             </div>
             <div className="product-right">
               <p className="product-spec">{item[0].specs}</p>

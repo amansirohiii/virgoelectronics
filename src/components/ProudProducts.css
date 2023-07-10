@@ -26,18 +26,24 @@ a {
 
 .product-header img {
     width: 100%;
+    height: 20rem;
+    /* align-items: center; */
 }
 
 .product-details {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     padding: 1rem;
+    color: black;
+    text-align: center;
+    font-weight: 600;
 }
 
-.item-price {
+
+/* .item-price {
     font-weight: 600;
     font-size: 2.2rem;
     margin-top: 1.4rem;
-}
+} */
 
 .products-grid {
     display: grid;
@@ -73,11 +79,14 @@ a {
 }
 
 .filter-btns button {
-    padding: .6rem 1.6rem;
+    padding: .6rem 1rem;
     cursor: pointer;
     background-color: transparent;
     border: 2px solid rgba(0, 0, 0, 0.3);
     transition: all 0.2s;
+    color: black;
+    font-size: 0.8rem;
+
 }
 
 .filter-btns button:hover {
@@ -92,12 +101,12 @@ a {
 }
 
 .title-home h3 {
-    font-size: 1.6rem;
+    font-size: 2rem;
     text-transform: uppercase;
     text-align: center;
     margin: 0 auto;
     font-weight: 900;
-    font-family: 'Blinker', sans-serif;
+    /* font-family: 'Blinker', sans-serif; */
 }
 
 .title-home a {
@@ -105,6 +114,9 @@ a {
     text-decoration: none;
     color: black;
     text-align: left;
+}
+.homee{
+    font-size: 1.2rem;
 }
 
 
@@ -117,6 +129,16 @@ a {
         grid-template-columns: 1fr 1fr 1fr;
         gap: 2rem;
     }
+    .homee {
+       display: none;
+    }
+    .title-home a {
+        font-size: 1.5rem;
+        margin-top: 0.3rem;
+
+
+    }
+
 }
 
 @media (max-width:600px) {
@@ -125,10 +147,12 @@ a {
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
     }
-}
+
+        }
 
 @media (max-width:430px) {
     .products-grid {
         grid-template-columns: 1fr;
     }
+
 }

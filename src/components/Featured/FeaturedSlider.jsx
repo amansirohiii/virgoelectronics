@@ -16,7 +16,11 @@ export default function FeaturedSlider() {
     <div className="trending ">
       <div className="container">
         <div className="title-btns">
-          <h3>Featured Products</h3>
+          <h3>
+
+    Featured Items
+
+      </h3>
           <div className="btns">
             <button title="scroll left" onClick={slideLeft}>
               <i className="fa-solid fa-arrow-left"></i>
