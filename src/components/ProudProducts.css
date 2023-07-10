@@ -136,9 +136,12 @@ a {
         font-size: 1.5rem;
         margin-top: 0.3rem;
 
-
     }
-
+    .product-header img {
+        width: 100%;
+        height: 25rem;
+        /* align-items: center; */
+    }
 }
 
 @media (max-width:600px) {
@@ -147,12 +150,20 @@ a {
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
     }
-
+    .product-header img {
+        width: 100%;
+        height: 25rem;
+        /* align-items: center; */
+    }
         }
 
 @media (max-width:430px) {
     .products-grid {
         grid-template-columns: 1fr;
     }
-
+    .product-header img {
+        width: 100%;
+        height: 25rem;
+        /* align-items: center; */
+    }
 }
