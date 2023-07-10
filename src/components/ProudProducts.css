@@ -92,14 +92,16 @@ a {
 }
 
 .title-home h3 {
-    font-size: 2.7rem;
+    font-size: 1.6rem;
     text-transform: uppercase;
     text-align: center;
     margin: 0 auto;
+    font-weight: 900;
+    font-family: 'Blinker', sans-serif;
 }
 
 .title-home a {
-    font-size: 1.6rem;
+    font-size: 1rem;
     text-decoration: none;
     color: black;
     text-align: left;

@@ -1,9 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Ubuntu&display=swap');
 
-*{
-    font-family: 'Roboto', sans-serif !important;
-    /* font-family: 'Ubuntu', sans-serif; */
-}
 @media (min-width: 1200px) {
   .container-fluid {
    margin: 0 12rem 0;
