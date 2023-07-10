@@ -3,17 +3,17 @@ import { items } from "../AllData";
 import FeaturedSlider from "../Featured/FeaturedSlider";
 // import Newsletter from "../components/Newsletter";
 import Footer from "../Footer/Footer";
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import "../ProductPage.css";
 
 function ProductPage() {
   const { id } = useParams();
   const item = items.filter((item) => item.id === parseInt(id));
-  const [image, setImage] = useState(item[0].img);
-
-  const changeImage = (e) => {
-    setImage(e.target.src);
-  };
+  // const [image, setImage] = useState(item[0].img);
+const image = item[0].img;
+  // const changeImage = (e) => {
+  //   setImage(e.target.src);
+  // };
 
   return (
     <>

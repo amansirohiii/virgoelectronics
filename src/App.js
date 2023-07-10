@@ -6,7 +6,7 @@ import Navbar from './components/Navbar/Navbar';
 // import FeaturedItem from './components/Featured/FeaturedItem';
 import './index.css';
 
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route} from 'react-router-dom';
 import Home from '../src/components/pages/Home';
 import Categories from '../src/components/pages/Categories';
 import All from './components/Categories-pages/All';
@@ -18,6 +18,7 @@ import Immersion from './components/Categories-pages/Immersion';
 import ProductPage from '../src/components/pages/ProductPage';
 // import Geyser from './components/Categories-pages/Geyser';
 import ScrollButton from './components/Scroller/ScrollButton';
+// import PageNotFound from './components/404PageNotFound/PageNotFound';
 function App() {
   return (
     <>
@@ -35,7 +36,10 @@ function App() {
           <Route path="immersion" element={<Immersion />} />
           {/* <Route path="geyser" element={<Geyser />} /> */}
         </Route>
+        {/* <Route component={PageNotFound} /> */}
+
         <Route path="categories/product/:id" element={<ProductPage />} />
+
         </Routes>
         <ScrollButton />
    </>

@@ -11,7 +11,7 @@ export default function Footer() {
 				<p className="footer-links">
 					<a href="/" className="link-1">Home</a>
 
-					<a href="/products">Products</a>
+					<a href="/products/all">Products</a>
 
 					<a href="/about">About</a>
 
