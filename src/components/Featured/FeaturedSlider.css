@@ -26,13 +26,13 @@
 }
 
 .item-header img {
-    width: 15rem;
+    width: 16.3rem;
     height: 18rem;
 }
 
 .item-description {
     font-size: 1.5rem;
-    padding: 1rem;
+    padding-top: 1rem;
     color: black;
     text-align: center;
     font-weight: 600;

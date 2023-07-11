@@ -28,7 +28,7 @@ backdrop-filter: saturate(180%) blur(30px);
   .navbar-nav {
     margin-left: auto;
     color: black ;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .navbar-light .navbar-nav .nav-link{
     color: black;
@@ -36,6 +36,8 @@ backdrop-filter: saturate(180%) blur(30px);
 
   a:link, a:visited, a:hover, a:active{
     text-decoration: none;
+    font-weight: 500;
+    /* text-align: right; */
   }
   .navbar-toggler  {
     border: none;

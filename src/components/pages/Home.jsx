@@ -1,7 +1,7 @@
 // import Banner from "../components/Banner";
 // import BannerReverse from "../components/BannerReverse";
 import Footer from "../Footer/Footer";
-// import Hero from "../components/Hero";
+import Hero from "../Hero/Hero";
 // import Newsletter from "../components/Newsletter";
 // import ProudProducts from "../components/ProudProducts";
 import FeaturedSlider from "../Featured/FeaturedSlider";
@@ -11,8 +11,8 @@ import FeaturedSlider from "../Featured/FeaturedSlider";
 export default function Home() {
   return (
     <>
-      {/* <Hero />
-      <ProudProducts />
+      <Hero />
+      {/* <ProudProducts />
       <Banner
         title="Creative harmonious living"
         text=" RAOUF Products are all made to standard sizes so that you can mix and match them freely."
