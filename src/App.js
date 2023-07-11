@@ -19,29 +19,48 @@ import ProductPage from '../src/components/pages/ProductPage';
 // import Geyser from './components/Categories-pages/Geyser';
 import ScrollButton from './components/Scroller/ScrollButton';
 // import PageNotFound from './components/404PageNotFound/PageNotFound';
-function App() {
+import Contact from './components/Contact/Contact';
+import About from './components/About/About';
+
+import LoadingBar from 'react-top-loading-bar';
+import { useState } from 'react'
+import Footer from './components/Footer/Footer';
+
+
+const App=()=> {
+  const [progress, setProgress] = useState(0)
+  const setProg = (prog) => {
+    setProgress(prog);
+  }
   return (
     <>
 
   <Navbar />
       <Routes>
-        <Route index path="/" element={<Home />} />
+        <Route index path="/" element={<Home setProgress={setProg}/>} />
 
-        <Route path="products" element={<Categories />}>
-          <Route path="all" element={<All />} />
-          <Route path="ceiling" element={<Ceiling/>} />
-          <Route path="cooler" element={<Cooler />} />
-          <Route path="pedestal" element={<Pedestal />} />
-          <Route path="heater" element={<Heater />} />
-          <Route path="immersion" element={<Immersion />} />
+        <Route path="products" element={<Categories setProgress={setProg}/>}>
+          <Route path="all" element={<All setProgress={setProg}/>} />
+          <Route path="ceiling" element={<Ceiling setProgress={setProg}/>} />
+          <Route path="cooler" element={<Cooler setProgress={setProg}/>} />
+          <Route path="pedestal" element={<Pedestal setProgress={setProg}/>} />
+          <Route path="heater" element={<Heater setProgress={setProg}/>} />
+          <Route path="immersion" element={<Immersion setProgress={setProg}/>} />
           {/* <Route path="geyser" element={<Geyser />} /> */}
         </Route>
         {/* <Route component={PageNotFound} /> */}
 
-        <Route path="categories/product/:id" element={<ProductPage />} />
+        <Route path="categories/product/:id" element={<ProductPage setProgress={setProg}/>} />
+        <Route index path="contact" element={<Contact setProgress={setProg}/>} />
+        <Route index path="about" element={<About setProgress={setProg}/>} />
 
         </Routes>
+        <LoadingBar
+          color='red'
+          progress={progress}
+        />
         <ScrollButton />
+        <Footer />
    </>
   );
 }

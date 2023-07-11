@@ -30,7 +30,7 @@ const Navbar = () => {
         className={`navbar fixed-top navbar-expand-lg navbar-light ${
           isMenuOpen ? "menu-open" : ""
         }`}
-        style={{ zIndex: "1", fontSize: "1rem", boxShadow: "0pc 0.5px 0.5px" }}
+        style={{ zIndex: "1", fontSize: "1rem", boxShadow: "0pc 0.1px 0.5px" }}
         ref={navbarRef}
       >
         {" "}

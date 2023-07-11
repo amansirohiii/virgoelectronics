@@ -1,13 +1,17 @@
 import CategoriesItemPedestal from "./CategoriesItemPedestal";
-import Footer from "../Footer/Footer";
+// import Footer from "../Footer/Footer";
 // import Newsletter from "../Newsletter";
+import { useEffect } from "react";
+export default function Pedestal(props) {
+  useEffect(() => {
+    props.setProgress(100)
+  }, [])
 
-export default function Pedestal() {
   return (
     <>
       <CategoriesItemPedestal />
       {/* <Newsletter /> */}
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

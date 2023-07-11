@@ -1,13 +1,17 @@
 import CategoriesItemCooler from "./CategoriesItemCooler";
-import Footer from "../Footer/Footer";
+// import Footer from "../Footer/Footer";
 // import Newsletter from "../Newsletter";
+import { useEffect } from "react";
+export default function Cooler(props) {
+  useEffect(() => {
+    props.setProgress(100)
+  }, [])
 
-export default function Cooler() {
   return (
     <>
       <CategoriesItemCooler />
       {/* <Newsletter /> */}
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

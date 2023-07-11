@@ -2,11 +2,15 @@ import { useParams } from "react-router-dom";
 import { items } from "../AllData";
 import FeaturedSlider from "../Featured/FeaturedSlider";
 // import Newsletter from "../components/Newsletter";
-import Footer from "../Footer/Footer";
+// import Footer from "../Footer/Footer";
 // import React, { useState } from "react";
 import "../ProductPage.css";
+import { useEffect } from "react";
+function ProductPage(props) {
+  useEffect(() => {
+    props.setProgress(100)
+  }, [])
 
-function ProductPage() {
   const { id } = useParams();
   const item = items.filter((item) => item.id === parseInt(id));
   // const [image, setImage] = useState(item[0].img);
@@ -69,7 +73,7 @@ const image = item[0].img;
         <br />
         <FeaturedSlider />
         {/* <Newsletter /> */}
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </>
   );
