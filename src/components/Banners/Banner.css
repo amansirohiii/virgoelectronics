@@ -12,15 +12,14 @@
     height: 25rem;
     overflow: hidden;
     flex-direction: row-reverse;
-img{
-    width: 10%;
-    height: 10%;
-    /* object-fit: cover; */
-}}
-
-.banner {
-    padding-bottom: 10rem;
 }
+.bannerrev{
+    padding-bottom: 10rem;
+
+}
+/* .banner {
+    padding-bottom: 10rem;
+} */
 
 .text-side {
     width: 50%;

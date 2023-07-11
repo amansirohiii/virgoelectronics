@@ -3,7 +3,7 @@ import "./Banner.css";
 
 function BannerReverse({ title, text, img }) {
   return (
-    <div className="banner">
+    <div className="banner bannerrev">
       <div className="container">
         <div className="banner-container-reverse">
           <div className="text-side">
