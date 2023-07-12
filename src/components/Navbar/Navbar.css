@@ -16,6 +16,30 @@
     margin: 0 0rem 0;
   }
 }
+.navbar-nav .nav-link {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+  transition: all 0.3s;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color: red;
+  /* transform: scaleX(0); */
+  transition: width 0.3s;
+}
+
+.navbar-nav .nav-link:hover::after {
+  /* transform: scaleX(1); */
+  width: 100%;
+}
+
 
 nav {
   background:rgba(255, 255, 255, 0.5);
