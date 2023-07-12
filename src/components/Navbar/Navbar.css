@@ -52,7 +52,7 @@ backdrop-filter: saturate(180%) blur(30px);
   .navbar-nav {
     margin-left: auto;
     color: black ;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   .navbar-light .navbar-nav .nav-link{
     color: black;

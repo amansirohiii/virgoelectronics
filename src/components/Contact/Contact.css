@@ -1,0 +1,129 @@
+.contact-form-container {
+    margin: 10rem auto;
+    width: 100%;
+    max-width: 80%;
+    padding: 1.2rem;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .gif-container {
+    flex: 1 1 50%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+  }
+
+  .gif-container img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .form-container {
+    padding-left: 8rem;
+    flex: 1 1 50%;
+    box-sizing: border-box;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.3rem;
+    text-align: center;
+  }
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .form-field {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  label {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+  }
+
+  input,
+  textarea {
+    background-color: #F1F1F2;
+    width: 100%;
+    padding: 0.5rem;
+    border: 0;
+    border: 2px solid #F1F1F2;
+    border-radius: 5px;
+    transition: border-color 0.3s, background-color 0.3s;
+  }
+
+  input:hover,
+  textarea:hover {
+    border-color: #333;
+  }
+
+  input:focus,
+  textarea:focus {
+    border-color: #333;
+    background-color: #eee;
+    outline: none;
+  }
+
+  .btnn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+ .btnn:hover {
+    background-color: black;
+  }
+
+
+.error input,
+.error textarea {
+  border-color: red;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+
+  @media (max-width: 768px) {
+    .contact-form-container{
+        max-width: 95%;
+    }
+    .contact-form-content {
+      flex-direction: column;
+    }
+
+    .gif-container,
+    .form-container {
+      width: 100%;
+      padding-left: 0;
+    }
+  }

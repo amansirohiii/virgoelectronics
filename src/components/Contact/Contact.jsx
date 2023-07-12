@@ -1,73 +1,139 @@
-import React, { useEffect } from 'react'
-export default function Contact(props) {
-    useEffect(() => {
-      props.setProgress(100)
-    }, [])
-    return (
-        <>
-            <div className="container mt-5 pt-5">
-                <div className="row">
-                    <div className="col-md-6">
-                        <h1 className="contact-h1">Contact Us</h1>
-                        <p className="contact-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
-                        <div className="contact-info">
-                            <div className="contact-info-item">
-                                <i className="fas fa-map-marker-alt"></i>
-                                <div className="contact-info-item-text">
-                                    <h4>Address</h4>
-                                    <p>123 Street, New York, USA</p>
-                                </div>
-                            </div>
-                            <div className="contact-info-item">
-                                <i className="fas fa-phone-alt"></i>
-                                <div className="contact-info-item-text">
-                                    <h4>Phone</h4>
-                                    <p>+012 345 6789</p>
-                                </div>
-                            </div>
+import React, { useState } from "react";
+import "./Contact.css";
+import Gif from "../../assests/images/contact.gif"
 
-                            <div className="contact-info-item">
-                                <i className="fas fa-envelope"></i>
-                                <div className="contact-info-item-text">
-                                    <h4>Email</h4>
-                                    <p>
-                                        <a href="mailto:aman@gmail.com"></a>
-                                    </p>
-                                </div>
-                            </div>
+export default function Contact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [mobile, setMobile] = useState("");
+  const [message, setMessage] = useState("");
+  const [formErrors, setFormErrors] = useState({
+    name: false,
+    email: false,
+    mobile: false,
+    message: false,
+  });
+  const handleNameChange = (e) => {
+    setName(e.target.value);
+  };
 
-                            <div className="contact-info-item">
-                                <i className="fas fa-clock"></i>
-                                <div className="contact-info-item-text">
-                                    <h4>Open Hours</h4>
-                                    <p>Mon - Fri: 8 AM to 9 PM</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-md-6">
-                        <form className="contact-form">
-                            <div className="form-group">
-                                <input type="text" className="form-control" placeholder="Your Name" />
-                            </div>
-                            <div className="form-group">
-                                <input type="email" className="form-control" placeholder="Your Email" />
-                            </div>
-                            <div className="form-group">
-                                <input type="text" className="form-control" placeholder="Subject" />
-                            </div>
-                            <div className="form-group">
-                                <textarea className="form-control" rows="5" placeholder="Message"></textarea>
-                            </div>
-                            <button type="submit" className="btn btn-primary">Send Message</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </>
-    )
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handleMobileChange = (e) => {
+    setMobile(e.target.value);
+  };
+
+  const handleMessageChange = (e) => {
+    setMessage(e.target.value);
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+     // Perform form validation
+     let errors = {
+        name: false,
+        email: false,
+        mobile: false,
+        message: false,
+      };
+
+      if (name.trim() === "") {
+        errors.name = true;
+      }
+
+      if (email.trim() === "" || !isValidEmail(email)) {
+        errors.email = true;
+      }
+
+      if (mobile.trim() === "" || !isValidMobile(mobile)) {
+        errors.mobile = true;
+      }
+
+      if (message.trim() === "") {
+        errors.message = true;
+      }
+
+      setFormErrors(errors);
+    };
+
+    const isValidEmail = (email) => {
+      // Add your email validation logic here
+      // Example: Use a regular expression to check email format
+      const emailRegex = /^\S+@\S+\.\S+$/;
+      return emailRegex.test(email);
+    };
+
+    const isValidMobile = (mobile) => {
+      // Add your mobile validation logic here
+      // Example: Use a regular expression to check mobile format
+      const mobileRegex = /^\d{10}$/;
+      return mobileRegex.test(mobile);
+    };
+
+  return (
+  <div className="contact-form-container">
+  <div className="contact-form-content">
+    <div className="gif-container">
+      <img src={Gif} alt="GIF" />
+    </div>
+    <div className="form-container">
+      <h2>Contact Us</h2>
+      <form onSubmit={handleSubmit} noValidate>
+      <div className={`form-field ${formErrors.name ? "error" : ""}`}>
+          {/* <label htmlFor="name">Name</label> */}
+          <input
+            type="text" placeholder="Name"
+            id="name"
+            value={name}
+            onChange={handleNameChange}
+          />
+          {formErrors.name && (
+                <span className="error-message">Please enter your name</span>
+              )}
+        </div>
+        <div className={`form-field ${formErrors.email ? "error" : ""}`}>
+          {/* <label htmlFor="email">Email</label> */}
+          <input
+            type="email" placeholder="Email"
+            id="email"
+            value={email}
+            onChange={handleEmailChange}
+          />
+          {formErrors.email && (
+                <span className="error-message">Please enter a valid email</span>
+              )}
+        </div>
+        <div className={`form-field ${formErrors.mobile ? "error" : ""}`}>
+          {/* <label htmlFor="mobile">Mobile</label> */}
+          <input
+            type="tel" placeholder="Mobile"
+            id="mobile"
+            value={mobile}
+            onChange={handleMobileChange}
+          />
+           {formErrors.mobile && (
+                <span className="error-message">Please enter a valid mobile number</span>
+              )}
+        </div>
+        <div className={`form-field ${formErrors.message ? "error" : ""}`}>
+          {/* <label htmlFor="message">Message</label> */}
+          <textarea
+            id="message" placeholder="Message" rows="5"
+            value={message}
+            onChange={handleMessageChange}
+          ></textarea>
+           {formErrors.message && (
+                <span className="error-message">Please enter your message</span>
+              )}
+        </div>
+        <button className="btnn" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
 
 
-
-
+  );
 }
+
