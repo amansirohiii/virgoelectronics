@@ -117,17 +117,18 @@ export default function Contact() {
               )}
         </div>
         <div className={`form-field ${formErrors.message ? "error" : ""}`}>
+            <div className="textarea-container">
           {/* <label htmlFor="message">Message</label> */}
           <textarea
             id="message" placeholder="Message" rows="5"
             value={message}
             onChange={handleMessageChange}
-          ></textarea>
+          ></textarea></div>
            {formErrors.message && (
                 <span className="error-message">Please enter your message</span>
               )}
         </div>
-        <button className="btnn" type="submit">Submit</button>
+        <button className="btnn" type="submit">Send</button>
       </form>
     </div>
   </div>
