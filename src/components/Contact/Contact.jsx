@@ -2,13 +2,12 @@ import React, { useState, useEffect } from "react";
 import "./Contact.css";
 import Gif from "../../assests/images/contact.gif"
 import emailjs from "emailjs-com";
-import config from "../../Config/config";
 
 export default function Contact() {
 
-  const USER_ID = config.USER_ID;
-  const TEMPLATE_ID = config.TEMPLATE_ID;
-  const SERVICE_ID = config.SERVICE_ID;
+  const USER_ID = process.env.USER_ID;
+  const TEMPLATE_ID = process.env.TEMPLATE_ID;
+  const SERVICE_ID = process.env.SERVICE_ID;
 
   const [submissionStatus, setSubmissionStatus] = useState(null);
   useEffect(() => {
