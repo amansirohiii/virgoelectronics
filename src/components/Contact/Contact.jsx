@@ -5,9 +5,9 @@ import emailjs from "emailjs-com";
 
 export default function Contact() {
 
-  const USER_ID = process.env.USER_ID;
-  const TEMPLATE_ID = process.env.TEMPLATE_ID;
-  const SERVICE_ID = process.env.SERVICE_ID;
+  const USER_ID = process.env.REACT_APP_USER_ID;
+  const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
+  const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
 
   const [submissionStatus, setSubmissionStatus] = useState(null);
   useEffect(() => {
