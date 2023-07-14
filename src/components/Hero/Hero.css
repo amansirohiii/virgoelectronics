@@ -7,6 +7,16 @@
     align-items: center;
     justify-content: center;
   } */
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
   .hero-banner {
     background-size: cover;
     background-position: center;
@@ -16,11 +26,13 @@
 
 
   .hero-content {
-    /* margin-top:15rem; */
     text-align: center;
-    padding-top: 15rem;
-
+  padding-top: 15rem;
+  opacity: 0;
+  animation: fade-in 1s ease forwards;
   }
+
+
 
   .hero-heading {
     font-size: 3rem;

@@ -1,8 +1,9 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import "./Hero.css";
 import Bg from "../../assests/images/bg.jpg";
 
 export default function Hero() {
+
   const heroStyle = {
     backgroundImage: `url(${Bg})`,
     // opacity: 0.5,
