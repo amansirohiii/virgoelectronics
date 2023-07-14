@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import "./Hero.css";
 import Bg from "../../assests/images/bg.jpg";
 
