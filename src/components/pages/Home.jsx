@@ -8,6 +8,7 @@ import FeaturedSlider from "../Featured/FeaturedSlider";
 import Banner1 from "../../assests/images/Cooler/cooler1.webp";
 import Banner2 from "../../assests/images/Ceiling/ceiling1.webp";
 import { useEffect } from "react";
+import ProductSection from "../Products/ProductSection";
 
 export default function Home(props) {
   useEffect(() => {
@@ -17,6 +18,7 @@ export default function Home(props) {
     <>
       <Hero />
       {/* <ProudProducts /> */}
+      <ProductSection/>
       <Banner
         title="Creative harmonious living"
         text=" Virgo Coolers are all made to standard sizes so that you can mix and match them freely."

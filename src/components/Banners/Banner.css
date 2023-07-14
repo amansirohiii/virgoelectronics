@@ -72,6 +72,17 @@
     color: black;
 }
 
+.banner {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+  }
+
+  .banner.show {
+    opacity: 1;
+  }
+
+
+
 @media (max-width:750px) {
     .text-side {
         padding: 0 4rem;
