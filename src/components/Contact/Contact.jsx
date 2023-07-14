@@ -139,7 +139,7 @@ export default function Contact() {
       <img src={Gif} alt="GIF" />
     </div>
     <div className="form-container">
-      <h2>Contact Us</h2>
+      <h2>Send us a Message</h2>
       <form onSubmit={handleSubmit} noValidate>
       <div className={`form-field ${formErrors.name ? "error" : ""}`}>
           {/* <label htmlFor="name">Name</label> */}

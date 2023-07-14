@@ -72,14 +72,14 @@ const Navbar = () => {
                 {" "}
                 <a className="nav-link mx-3" href="/about">
                   {" "}
-                  About{" "}
+                  About Us{" "}
                 </a>{" "}
               </li>{" "}
               <li className="nav-item">
                 {" "}
                 <a className="nav-link mx-3" href="/contact">
                   {" "}
-                  Contact Us{" "}
+                  Enquiry{" "}
                 </a>{" "}
               </li>{" "}
             </ul>{" "}
