@@ -5,8 +5,8 @@ import Hero from "../Hero/Hero";
 // import Newsletter from "../components/Newsletter";
 // import ProudProducts from "../components/ProudProducts";
 import FeaturedSlider from "../Featured/FeaturedSlider";
-import Banner1 from "../../assests/images/Cooler/cooler1.webp";
-import Banner2 from "../../assests/images/Ceiling/ceiling1.webp";
+import Banner1 from "../../assests/images/Ceiling/ceiling1.webp";
+import Banner2 from "../../assests/images/Cooler/cooler1.webp";
 import { useEffect } from "react";
 import ProductSection from "../Products/ProductSection";
 

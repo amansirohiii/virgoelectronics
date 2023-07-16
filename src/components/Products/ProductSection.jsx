@@ -7,8 +7,10 @@ const ProductSection = () => {
     { name: "Ceiling Fan", color: "#FF6384", icon: "🌀", link: "/products/ceiling" },
     { name: "Cooler", color: "#36A2EB", icon: "🌬️", link: "/products/cooler" },
     { name: "Pedestal Fan", color: "#FFCE56", icon: "🌀", link: "/products/pedestal" },
-    { name: "Heaters", color: "#4BC0C0", icon: "🔥", link: "/products/heater" },
-    { name: "Immersion Rod", color: "#FF9F40", icon: "🔥", link: "/products/immersion" },
+    { name: "Heating", color: "#4BC0C0", icon: "🔥", link: "/products/heating" },
+    { name: "Exhaust Fan", color: "#FF6384", icon: "🌀", link: "/products/exhaust" },
+    { name: "Electric Iron", color: "#36A2EB", icon: "🔥", link: "/products/iron" },
+    { name: "Madhani", color: "#FFCE56", icon: "🌀", link: "/products/madhani" },
   ];
 
   return (

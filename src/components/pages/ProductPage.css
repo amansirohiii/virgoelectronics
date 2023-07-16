@@ -71,12 +71,15 @@
     background-color: #E5E5E5;
     padding: 5rem 4rem 4rem 5rem;
     margin-top: 5rem;
+    text-align: center;
+
 }
 
 .product-spec {
     font-size: 1.25rem;
     /* margin-bottom: 10rem; */
     line-height: 1.5;
+    text-align: left;
 }
 /*
 .product-quant {
@@ -277,15 +280,28 @@
         margin-bottom: 2rem;
     }
 
-    .atc-buy {
-        gap: 2rem;
-        width: 100%;
-        flex-direction: column;
-    }
 
-    .atc-buy button {
-        width: 100%;
-    }
 
 
 }
+.product-enquiry-btn{
+
+
+        background-color: black;
+        color: white;
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 1rem;
+        text-transform: uppercase;
+        margin-top: 1.25rem;
+        cursor: pointer;
+        border: 2px solid black;
+        transition: all 0.15s;
+
+    }
+
+    .product-enquiry-btn:hover {
+        background-color: transparent;
+        color: black;
+    }
+

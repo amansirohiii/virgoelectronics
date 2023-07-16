@@ -5,7 +5,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
 function CategoriesItem() {
-  const filteredItems = items.filter((item) => item.category === "geyser");
+  const filteredItems = items.filter((item) => item.category === "madhani");
 
   return (
     <>

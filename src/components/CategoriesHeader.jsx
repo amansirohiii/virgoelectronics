@@ -24,7 +24,7 @@ function CategoriesHeader() {
               <button>All</button>
             </Link>
             <Link to="ceiling">
-              <button onClick={() => handleBtnName("ceiling")}>
+              <button onClick={() => handleBtnName("ceiling fans")}>
                 Ceiling
               </button>
             </Link>
@@ -34,19 +34,23 @@ function CategoriesHeader() {
               </button>
             </Link>
             <Link to="pedestal">
-              <button onClick={() => handleBtnName("pedestal")}>Pedestal</button>
+              <button onClick={() => handleBtnName("pedestal fans")}>Pedestal</button>
             </Link>
-            <Link to="heater">
+            <Link to="exhaust">
+              <button onClick={() => handleBtnName("exhaust fans")}>
+                Exhaust Fan
+              </button>
+            </Link>
+            <Link to="heating">
               <button onClick={() => handleBtnName("heating")}>Heating</button>
             </Link>
             <Link to="iron">
-              <button onClick={() => handleBtnName("iron")}>Electric Iron</button>
+              <button onClick={() => handleBtnName("electric iron")}>Electric Iron</button>
             </Link>
-            {/* <Link to="geyser">
-              <button onClick={() => handleBtnName("geyser")}>
-                Geyser
-              </button>
-            </Link> */}
+            <Link to="madhani">
+              <button onClick={() => handleBtnName("Madhani")}>Madhani</button>
+            </Link>
+
           </div>
         </div>
       </div>

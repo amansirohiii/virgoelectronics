@@ -23,9 +23,9 @@ import Iron2 from "../assests/images/Iron/iron2.webp";
 import Madhani1 from "../assests/images/Madhani/madhani1.jpg";
 import Pedestal1 from "../assests/images/Pedestal/pedestal1.jpg";
 import Pedestal2 from "../assests/images/Pedestal/pedestal2.jpg";
-import Heater1 from "../assests/images/Heater/heater1.jpg";
-import Heater2 from "../assests/images/Heater/heater2.jpg";
-import Immersion1 from "../assests/images/Heater/immersion1.webp";
+import Heater1 from "../assests/images/Heating/heater1.jpg";
+import Heater2 from "../assests/images/Heating/heater2.jpg";
+import Immersion1 from "../assests/images/Heating/immersion1.webp";
 
 
 export const items = [

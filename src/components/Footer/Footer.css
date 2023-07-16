@@ -135,3 +135,23 @@
 	  }
 
 }
+
+
+  .social-icons {
+	margin-top: 20px;
+  }
+
+  .social-icon {
+	display: inline-block;
+	margin-right: 10px;
+	color: white;
+	font-size: 24px;
+  }
+
+  .social-icon i {
+	transition: color 0.3s ease;
+  }
+
+  .social-icon:hover i {
+	color: red;
+  }

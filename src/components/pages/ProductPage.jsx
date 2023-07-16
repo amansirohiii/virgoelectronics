@@ -4,7 +4,7 @@ import FeaturedSlider from "../Featured/FeaturedSlider";
 // import Newsletter from "../components/Newsletter";
 // import Footer from "../Footer/Footer";
 // import React, { useState } from "react";
-import "../ProductPage.css";
+import "./ProductPage.css";
 import { useEffect } from "react";
 import Contact from "../Contact/Contact";
 import { Link } from "react-router-dom";
@@ -51,11 +51,10 @@ const image = item[0].img;
             </div>
             <div className="product-right">
               <p className="product-spec">{item[0].specs}</p>
-              <div className="atc-buy">
-               
+              {/* <div className="atc-buy"> */}
 
-                {/* Removed the "add to cart" and "buy now" buttons */}
-              </div>
+              <Link to="/contact"><button class ="product-enquiry-btn">Enquiry</button></Link>
+              {/* </div> */}
             </div>
           </div>
 

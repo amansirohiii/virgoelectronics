@@ -13,10 +13,11 @@ import All from './components/Categories-pages/All';
 import Ceiling from './components/Categories-pages/Ceiling';
 import Cooler from './components/Categories-pages/Cooler';
 import Pedestal from './components/Categories-pages/Pedestal';
-import Heater from './components/Categories-pages/Heater';
+import Heating from './components/Categories-pages/Heating';
 import Immersion from './components/Categories-pages/Iron';
 import ProductPage from '../src/components/pages/ProductPage';
-// import Geyser from './components/Categories-pages/Geyser';
+import Exhaust from './components/Categories-pages/Exhaust';
+import Madhani from './components/Categories-pages/Madhani';
 import ScrollButton from './components/Scroller/ScrollButton';
 // import PageNotFound from './components/404PageNotFound/PageNotFound';
 import Contact from './components/Contact/Contact';
@@ -44,9 +45,10 @@ const App=()=> {
           <Route path="ceiling" element={<Ceiling setProgress={setProg}/>} />
           <Route path="cooler" element={<Cooler setProgress={setProg}/>} />
           <Route path="pedestal" element={<Pedestal setProgress={setProg}/>} />
-          <Route path="heater" element={<Heater setProgress={setProg}/>} />
+          <Route path="heating" element={<Heating setProgress={setProg}/>} />
           <Route path="iron" element={<Immersion setProgress={setProg}/>} />
-          {/* <Route path="geyser" element={<Geyser />} /> */}
+          <Route path="exhaust" element={<Exhaust setProgress={setProg}/>} />
+          <Route path="madhani" element={<Madhani setProgress={setProg}/>} />
         </Route>
         {/* <Route component={PageNotFound} /> */}
 
