@@ -37,10 +37,10 @@ function CategoriesHeader() {
               <button onClick={() => handleBtnName("pedestal")}>Pedestal</button>
             </Link>
             <Link to="heater">
-              <button onClick={() => handleBtnName("heater")}>Heater</button>
+              <button onClick={() => handleBtnName("heating")}>Heating</button>
             </Link>
-            <Link to="immersion">
-              <button onClick={() => handleBtnName("immersion")}>Immersion</button>
+            <Link to="iron">
+              <button onClick={() => handleBtnName("iron")}>Electric Iron</button>
             </Link>
             {/* <Link to="geyser">
               <button onClick={() => handleBtnName("geyser")}>

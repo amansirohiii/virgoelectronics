@@ -2,6 +2,9 @@ import Ceiling1 from "../assests/images/Ceiling/ceiling1.webp";
 import Ceiling2 from "../assests/images/Ceiling/ceiling2.webp";
 import Ceiling3 from "../assests/images/Ceiling/ceiling3.webp";
 import Ceiling4 from "../assests/images/Ceiling/ceiling4.webp";
+import Ceiling5 from "../assests/images/Ceiling/ceiling5.webp";
+import Ceiling6 from "../assests/images/Ceiling/ceiling6.webp";
+import Ceiling7 from "../assests/images/Ceiling/ceiling7.webp";
 import Cooler1 from "../assests/images/Cooler/cooler1.webp";
 import Cooler2 from "../assests/images/Cooler/cooler2.webp";
 import Cooler3 from "../assests/images/Cooler/cooler3.webp";
@@ -13,15 +16,17 @@ import Cooler8 from "../assests/images/Cooler/cooler8.webp";
 import Cooler9 from "../assests/images/Cooler/cooler9.webp";
 import Cooler10 from "../assests/images/Cooler/cooler10.webp";
 import Cooler11 from "../assests/images/Cooler/cooler11.webp";
-import Cooler12 from "../assests/images/Cooler/cooler12.webp";
-import Cooler13 from "../assests/images/Cooler/cooler13.webp";
-import Cooler14 from "../assests/images/Cooler/cooler14.webp";
-import Cooler15 from "../assests/images/Cooler/cooler15.webp";
-import Pedestal1 from "../assests/images/Pedestal/pedestal1.webp";
-import Pedestal2 from "../assests/images/Pedestal/pedestal2.webp";
-import Heater1 from "../assests/images/Heater/heater1.webp";
-import Heater2 from "../assests/images/Heater/heater2.webp";
-import Immersion1 from "../assests/images/Immersion/immersion1.webp";
+import Exhaust1 from "../assests/images/Exhaust/exhaust1.jpg";
+import Exhaust2 from "../assests/images/Exhaust/exhaust2.jpg";
+import Iron1 from "../assests/images/Iron/iron1.webp";
+import Iron2 from "../assests/images/Iron/iron2.webp";
+import Madhani1 from "../assests/images/Madhani/madhani1.jpg";
+import Pedestal1 from "../assests/images/Pedestal/pedestal1.jpg";
+import Pedestal2 from "../assests/images/Pedestal/pedestal2.jpg";
+import Heater1 from "../assests/images/Heater/heater1.jpg";
+import Heater2 from "../assests/images/Heater/heater2.jpg";
+import Immersion1 from "../assests/images/Heater/immersion1.webp";
+
 
 export const items = [
   {
@@ -60,7 +65,7 @@ export const items = [
     specs:
       "The Verner Panton Flowerpot , designed in 1968, was originally intended for the restaurant industry and Verner Panton exhibitions.",
     texture: "Plastic",
-    weight: "2kg",
+    weight: "5kg",
     size: "15cm x 15cm",
   },
   {
@@ -77,7 +82,46 @@ export const items = [
     size: "250cm x 60cm",
   },
   {
-  id: 5,
+    id: 5,
+    category: "ceiling",
+    img: Ceiling5,
+    description: "Ceiling 5",
+    price: 254,
+    otherImgs: [],
+    specs:
+      "Pulp Units are lightweight and durable, and can be used horizontally or vertically. Designed with A4 paper in mind, MUJI angle files and ring binders fit neatly inside.",
+    texture: "Wood",
+    weight: "45kg",
+    size: "250cm x 60cm",
+  },
+  {
+    id: 6,
+    category: "ceiling",
+    img: Ceiling6,
+    description: "Ceiling 6",
+    price: 254,
+    otherImgs: [],
+    specs:
+      "Pulp Units are lightweight and durable, and can be used horizontally or vertically. Designed with A4 paper in mind, MUJI angle files and ring binders fit neatly inside.",
+    texture: "Wood",
+    weight: "45kg",
+    size: "250cm x 60cm",
+  },
+    {
+    id: 7,
+    category: "ceiling",
+    img: Ceiling7,
+    description: "Ceiling 7",
+    price: 254,
+    otherImgs: [],
+    specs:
+      "Pulp Units are lightweight and durable, and can be used horizontally or vertically. Designed with A4 paper in mind, MUJI angle files and ring binders fit neatly inside.",
+    texture: "Wood",
+    weight: "45kg",
+    size: "250cm x 60cm",
+  },
+  {
+  id: 8,
     category: "cooler",
     img: Cooler1,
     description: "Cooler 1",
@@ -90,7 +134,7 @@ export const items = [
     size: "150cm x 70cm",
   },
   {
-    id: 6,
+    id: 9,
     category: "cooler",
     img: Cooler2,
     description: "Cooler 2",
@@ -103,7 +147,7 @@ export const items = [
     size: "20xm x 10cm",
   },
   {
-    id: 7,
+    id: 10,
     category: "cooler",
     img: Cooler3,
     description: "Cooler 3",
@@ -116,7 +160,7 @@ export const items = [
     size: "15cm x 15cm",
   },
   {
-    id: 8,
+    id: 11,
     category: "cooler",
     img: Cooler4,
     description: "Cooler 4",
@@ -129,7 +173,7 @@ export const items = [
     size: "250cm x 60cm",
   },
   {
-    id: 9,
+    id: 12,
     category: "cooler",
     img: Cooler5,
     description: "Cooler 5",
@@ -142,7 +186,7 @@ export const items = [
     size: "20cm x 20cm",
   },
   {
-    id: 10,
+    id: 13,
     category: "cooler",
     img: Cooler6,
     description: "Cooler 6",
@@ -167,7 +211,7 @@ export const items = [
 
   },
   {
-    id: 12,
+    id: 14,
     category: "cooler",
     img: Cooler8,
     description: "Cooler 8",
@@ -179,7 +223,7 @@ export const items = [
     size: "20cm x 20cm",
 
   }, {
-    id: 13,
+    id: 15,
     category: "cooler",
     img: Cooler9,
     description: "Cooler 9",
@@ -190,8 +234,9 @@ export const items = [
     weight: "3kg",
     size: "20cm x 20cm",
 
-  }, {
-    id: 14,
+  },
+   {
+    id: 16,
     category: "cooler",
     img: Cooler10,
     description: "Cooler 10",
@@ -203,7 +248,7 @@ export const items = [
     size: "20cm x 20cm",
 
   }, {
-    id: 15,
+    id: 17,
     category: "cooler",
     img: Cooler11,
     description: "Cooler 11",
@@ -215,34 +260,23 @@ export const items = [
     size: "20cm x 20cm",
 
   }, {
-    id: 16,
-    category: "cooler",
-    img: Cooler12,
-    description: "Cooler 12",
-    price: 120,
-    otherImgs: [],
-    specs:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, unde voluptas voluptatem, ipsum et nobis nesciunt nulla, autem corrupti est quas animi modi sit maxime. Necessitatibus reprehenderit excepturi iusto consequuntur hic esse, expedita unde quo quisquam ex totam, illo sunt maxime beatae, quae id repellendus!  ",
-    texture: "Plastic",
-    weight: "3kg",
-    size: "20cm x 20cm",
-
-  }, {
-    id: 17,
-    category: "cooler",
-    img: Cooler13,
-    description: "Cooler 13",
-    price: 120,
-    otherImgs: [],
-    specs:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, unde voluptas voluptatem, ipsum et nobis nesciunt nulla, autem corrupti est quas animi modi sit maxime. Necessitatibus reprehenderit excepturi iusto consequuntur hic esse, expedita unde quo quisquam ex totam, illo sunt maxime beatae, quae id repellendus!  ",
-    texture: "Plastic",
-    weight: "3kg",
-    size: "20cm x 20cm",
-
-  }, {
     id: 18,
-    category: "cooler",
-    img: Cooler14,
-    description: "Cooler 14",
+    category: "exhaust",
+    img: Exhaust1,
+    description: "Exhaust 1",
+    price: 120,
+    otherImgs: [],
+    specs:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, unde voluptas voluptatem, ipsum et nobis nesciunt nulla, autem corrupti est quas animi modi sit maxime. Necessitatibus reprehenderit excepturi iusto consequuntur hic esse, expedita unde quo quisquam ex totam, illo sunt maxime beatae, quae id repellendus!  ",
+    texture: "Plastic",
+    weight: "3kg",
+    size: "20cm x 20cm",
+
+  },
+   {
+    id: 19,
+    category: "exhaust",
+    img: Exhaust2,
+    description: "Exhaust 2",
     price: 120,
     otherImgs: [],
     specs:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, unde voluptas voluptatem, ipsum et nobis nesciunt nulla, autem corrupti est quas animi modi sit maxime. Necessitatibus reprehenderit excepturi iusto consequuntur hic esse, expedita unde quo quisquam ex totam, illo sunt maxime beatae, quae id repellendus!  ",
@@ -251,10 +285,10 @@ export const items = [
     size: "20cm x 20cm",
 
   }, {
-    id: 19,
-    category: "cooler",
-    img: Cooler15,
-    description: "Cooler 15",
+    id: 20,
+    category: "iron",
+    img: Iron1,
+    description: "Iron 1",
     price: 120,
     otherImgs: [],
     specs:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, unde voluptas voluptatem, ipsum et nobis nesciunt nulla, autem corrupti est quas animi modi sit maxime. Necessitatibus reprehenderit excepturi iusto consequuntur hic esse, expedita unde quo quisquam ex totam, illo sunt maxime beatae, quae id repellendus!  ",
@@ -264,7 +298,20 @@ export const items = [
 
   },
   {
-    id: 20,
+    id: 21,
+    category: "iron",
+    img: Iron2,
+    description: "Iron 2",
+    price: 120,
+    otherImgs: [],
+    specs:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, unde voluptas voluptatem, ipsum et nobis nesciunt nulla, autem corrupti est quas animi modi sit maxime. Necessitatibus reprehenderit excepturi iusto consequuntur hic esse, expedita unde quo quisquam ex totam, illo sunt maxime beatae, quae id repellendus!  ",
+    texture: "Plastic",
+    weight: "3kg",
+    size: "20cm x 20cm",
+
+  },
+  {
+    id: 22,
     category: "pedestal",
     img: Pedestal1,
     description: "Pedestal 1",
@@ -276,7 +323,7 @@ export const items = [
     size: "150cm x 70cm",
   },
   {
-    id: 21,
+    id: 23,
     category: "pedestal",
     img: Pedestal2,
     description: "Pedestal 2",
@@ -288,8 +335,8 @@ export const items = [
     size: "20xm x 10cm",
   },
   {
-    id: 22,
-    category: "heater",
+    id: 24,
+    category: "heating",
     img: Heater1,
     description: "Heater 1",
     price: 79,
@@ -300,8 +347,8 @@ export const items = [
     size: "15cm x 15cm",
   },
   {
-    id: 23,
-    category: "heater",
+    id: 25,
+    category: "heating",
     img: Heater2,
     description: "Heater 2",
     price: 254,
@@ -312,10 +359,22 @@ export const items = [
     size: "250cm x 60cm",
   },
   {
-    id: 24,
-    category: "immersion",
+    id: 26,
+    category: "heating",
     img: Immersion1,
     description: "Immersion 1",
+    price: 986,
+    otherImgs: [],
+    specs:  "Tradition Little Petra VB1 Armchair Sheepskin Moonlight/ Walnut/ Brass Limited Edition | We give you a special discount when you put this product in the basket.",
+    texture: "Sheep Skin",
+    weight: "15kg",
+    size: "150cm x 70cm",
+  },
+  {
+    id: 27,
+    category: "madhani",
+    img: Madhani1,
+    description: "Madhani 1",
     price: 986,
     otherImgs: [],
     specs:  "Tradition Little Petra VB1 Armchair Sheepskin Moonlight/ Walnut/ Brass Limited Edition | We give you a special discount when you put this product in the basket.",

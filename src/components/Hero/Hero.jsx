@@ -1,19 +1,17 @@
 import React from "react";
 import "./Hero.css";
-import Bg from "../../assests/images/bg.jpg";
+import Bg from "../../assests/images/bg.webp";
+import Logo from "../../assests/images/logo1.webp";
 
 export default function Hero() {
-
-  const heroStyle = {
-    backgroundImage: `url(${Bg})`,
-    // opacity: 0.5,
-  };
-
   return (
-    <div className="hero-banner" style={heroStyle}>
+    <div className="hero-banner">
+      <div className="bg-image" style={{ backgroundImage: `url(${Bg})` }}></div>
       <div className="hero-content">
-        <h1 className="hero-heading">VIRGO ELECTRONICS</h1>
-        <h2 className="hero-subheading">VIRGO fans - cool without compromise</h2>
+        <div className="logo-container">
+          <img src={Logo} alt="Virgo Electronics" className="logo" />
+        </div>
+        <h2 className="hero-subheading">ELECTRONICS</h2>
         <a href="/products/all">
           <button className="hero-button">Products</button>
         </a>

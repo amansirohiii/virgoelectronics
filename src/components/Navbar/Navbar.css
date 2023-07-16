@@ -16,6 +16,9 @@
     margin: 0 0rem 0;
   }
 }
+.navbar-brand{
+  padding: 0;
+}
 .navbar-nav .nav-link {
   position: relative;
   display: inline-block;

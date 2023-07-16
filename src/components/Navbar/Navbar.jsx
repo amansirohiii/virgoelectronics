@@ -38,7 +38,7 @@ const Navbar = () => {
           {" "}
           <a className="navbar-brand" href="/">
             {" "}
-            <img src={Logo} alt="" style={{ height: "3rem" }} />{" "}
+            <img src={Logo} alt="" style={{ height: "5rem" }} />{" "}
           </a>{" "}
           <button
             className="navbar-toggler"

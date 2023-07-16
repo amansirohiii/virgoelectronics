@@ -14,7 +14,7 @@ import Ceiling from './components/Categories-pages/Ceiling';
 import Cooler from './components/Categories-pages/Cooler';
 import Pedestal from './components/Categories-pages/Pedestal';
 import Heater from './components/Categories-pages/Heater';
-import Immersion from './components/Categories-pages/Immersion';
+import Immersion from './components/Categories-pages/Iron';
 import ProductPage from '../src/components/pages/ProductPage';
 // import Geyser from './components/Categories-pages/Geyser';
 import ScrollButton from './components/Scroller/ScrollButton';
@@ -45,7 +45,7 @@ const App=()=> {
           <Route path="cooler" element={<Cooler setProgress={setProg}/>} />
           <Route path="pedestal" element={<Pedestal setProgress={setProg}/>} />
           <Route path="heater" element={<Heater setProgress={setProg}/>} />
-          <Route path="immersion" element={<Immersion setProgress={setProg}/>} />
+          <Route path="iron" element={<Immersion setProgress={setProg}/>} />
           {/* <Route path="geyser" element={<Geyser />} /> */}
         </Route>
         {/* <Route component={PageNotFound} /> */}
