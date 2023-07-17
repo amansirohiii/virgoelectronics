@@ -1,12 +1,13 @@
 .product-section {
     text-align: center;
     padding: 1.25rem;
+
   }
 
   .product-heading {
     font-size: 2.6rem;
     font-weight: 600;
-    margin-bottom: 4.2rem ;
+    margin-bottom: 4.2rem;
     margin-top: 10rem;
   }
 
@@ -14,7 +15,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
   }
 
   .product-circle {
@@ -25,26 +25,22 @@
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
-    margin: 10px;
+    margin: 1rem 5rem;
     cursor: pointer;
     overflow: hidden;
+    background-color: #f1f1f2;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
   }
 
-  .product-circle:hover .product-icon {
-    animation: rotate 0.5s linear;
-  }
-
-  @keyframes rotate {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
+  .product-circle:hover {
+    transform: scale(1.05);
+    border: 1px solid transparent;
+    /* padding: 10px; */
+    box-shadow: 5px 10px black;  }
 
   .product-icon {
-    font-size: 48px;
+    width: 7rem;
   }
 
   .product-name {
@@ -52,5 +48,10 @@
     font-size: 1.2rem;
     font-weight: bold;
   }
+@media screen and (max-width: 768px) {
 
+    .product-circle {
+        margin: 1rem 0.4rem;
+    }
+}
 
