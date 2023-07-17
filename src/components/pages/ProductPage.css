@@ -179,12 +179,14 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 1.25rem;
+    padding: 1rem 1.25rem;
+    margin-top: 0.5rem;
 }
 
 .spec-title {
     font-size: 1.3rem;
     font-weight: 900;
+    margin-bottom: 0;
 }
 
 .title-desc {
@@ -303,5 +305,9 @@
     .product-enquiry-btn:hover {
         background-color: transparent;
         color: black;
+    }
+    .hide-spec{
+        display: none;
+        height: 0;
     }
 
