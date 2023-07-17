@@ -19,7 +19,7 @@ import ProductPage from '../src/components/pages/ProductPage';
 import Exhaust from './components/Categories-pages/Exhaust';
 import Madhani from './components/Categories-pages/Madhani';
 import ScrollButton from './components/Scroller/ScrollButton';
-// import PageNotFound from './components/404PageNotFound/PageNotFound';
+import PageNotFound from './components/PageNotFound/PageNotFound';
 import Contact from './components/Contact/Contact';
 import About from './components/About/About';
 
@@ -50,8 +50,7 @@ const App=()=> {
           <Route path="exhaust" element={<Exhaust setProgress={setProg}/>} />
           <Route path="madhani" element={<Madhani setProgress={setProg}/>} />
         </Route>
-        {/* <Route component={PageNotFound} /> */}
-
+        <Route path='*' element={<PageNotFound />}/>
         <Route path="categories/product/:id" element={<ProductPage setProgress={setProg}/>} />
         <Route index path="contact" element={<Contact setProgress={setProg}/>} />
         <Route index path="about" element={<About setProgress={setProg}/>} />
