@@ -106,7 +106,7 @@ function ProductPage(props) {
             </div>
             <div className="product-right">
               <p className="product-spec">{renderSpecs(item[0].specs)}</p>
-              <Link to="/contact">
+              <Link onClick={() => window.scrollTo(0, 0)} to="/contact">
                 <button className="product-enquiry-btn">Enquiry</button>
               </Link>
             </div>
