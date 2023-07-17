@@ -45,10 +45,7 @@ const Hero = () => {
       <span className="visually-hidden">Next</span>
     </button>
   </div>
-  <div className="heroMobile">
-        {/* Render your logo component or image here */}
-        <img src={Logo} alt="Logo" />
-      </div>
+  
     </>
   );
 };

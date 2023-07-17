@@ -13,23 +13,8 @@
 }
 
 
-.heroMobile {
-  display: none;
-}
 
-@media only screen and (max-width: 768px) {
-  .heroMobile {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-  }
 
-  .heroMobile img {
-    max-width: 80%;
-    height: auto;
-  }
-}
 
 @media (max-width: 600px) {
   .carousel{
