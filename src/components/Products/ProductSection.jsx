@@ -8,7 +8,7 @@ import PedestalIcon from "../../assests/images/Icons/pedestal.png";
 import HeatingIcon from "../../assests/images/Icons/heating.png";
 import ExhaustIcon from "../../assests/images/Icons/exhaust.png";
 import IronIcon from "../../assests/images/Icons/iron.png";
-// import MadhaniIcon from "../../assests/images/Icons/madhani.png";
+import MadhaniIcon from "../../assests/images/Icons/madhani.png";
 
 
 
@@ -20,7 +20,7 @@ const ProductSection = () => {
     { name: "Heating", color: "#4BC0C0", icon: HeatingIcon, link: "/products/heating" },
     { name: "Exhaust Fan", color: "#FF6384", icon: ExhaustIcon, link: "/products/exhaust" },
     { name: "Electric Iron", color: "#36A2EB", icon: IronIcon, link: "/products/iron" },
-    { name: "Madhani", color: "#FFCE56", icon: IronIcon, link: "/products/madhani" },
+    { name: "Madhani", color: "#FFCE56", icon: MadhaniIcon, link: "/products/madhani" },
   ];
 
   return (
