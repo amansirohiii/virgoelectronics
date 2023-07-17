@@ -2,7 +2,7 @@ import React from "react";
 import "./Hero.css";
 import Bg from "../../assests/images/Bg.webp";
 import bg from "../../assests/images/bg.webp";
-import Logo from "../../assests/images/logo.webp";
+// import Logo from "../../assests/images/logo.webp";
 
 
 const Hero = () => {
@@ -45,7 +45,7 @@ const Hero = () => {
       <span className="visually-hidden">Next</span>
     </button>
   </div>
-  
+
     </>
   );
 };
