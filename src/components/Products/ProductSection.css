@@ -37,7 +37,7 @@
     transform: scale(1.05);
     border: 1px solid transparent;
     /* padding: 10px; */
-    box-shadow: 5px 10px black;  }
+    box-shadow: 5px 6px black;  }
 
   .product-icon {
     width: 7rem;
