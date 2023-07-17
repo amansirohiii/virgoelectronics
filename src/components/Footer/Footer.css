@@ -15,6 +15,12 @@
 	.footer-margin {
 	  margin: 0 1rem 0;
 	}
+	
+  }
+  .footer-company-address{
+	font-size: 1rem;
+	margin: 0;
+
   }
 .footer-distributed{
 	background: black;
@@ -25,7 +31,7 @@
 	/* font: bold 16px sans-serif; */
 	padding: 55px 50px;
     border-top: 1px solid #ebebeb;
-	color: white !important;
+	color: white ;
 	text-align: center;
 
 }
@@ -54,7 +60,7 @@
 
 .footer-distributed .footer-company-name{
 	color:  red !important;
-	font-size: 1.5rem;
+	font-size: 1.8rem;
 	font-weight: normal;
 	margin: 0;
 }
@@ -89,8 +95,8 @@
   left: 0;
   color: #fff;
   display: inline-block;
-  padding-right: 5px;
-  padding-left: 5px;
+  padding-right: 1rem;
+  padding-left: 1rem;
 
 }
 
@@ -137,21 +143,37 @@
 }
 
 
-  .social-icons {
-	margin-top: 20px;
-  }
 
-  .social-icon {
-	display: inline-block;
-	margin-right: 10px;
-	color: white;
-	font-size: 24px;
-  }
 
-  .social-icon i {
-	transition: color 0.3s ease;
-  }
 
-  .social-icon:hover i {
+
+
+
+  .social-media:hover i {
 	color: red;
   }
+  .social-media{
+	display: flex;
+    justify-content: start;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+	justify-content: center;
+}
+.circle{
+	width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.1rem;
+    margin-left: 2rem;
+}
+.circle svg{
+	width: 1rem;
+}
+
+.circle:first-of-type{
+	margin: 0;
+}
