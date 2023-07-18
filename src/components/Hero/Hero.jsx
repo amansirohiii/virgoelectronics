@@ -100,9 +100,7 @@ const Hero = () => {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
-      <div className="container-below">
-        {/* Content of the container below the carousel */}
-      </div>
+     
     </div>
   );
 };
