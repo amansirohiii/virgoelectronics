@@ -13,7 +13,7 @@
 .product-big-name {
     position: absolute;
     font-size: 2.5rem;
-    top: 8px;
+    top: 0.5rem;
     left: 50%;
     transform: translate(-50%);
     font-weight: 900;
@@ -258,9 +258,10 @@
     }
 
     .product-big-name {
-        /* width: 31rem; */
+        width: 100%;
         text-align: center;
     }
+
 }
 
 @media (max-width:570px) {
@@ -268,7 +269,7 @@
     .specifications {
         gap: 2rem;
         flex-direction: column;
-        margin-bottom: 28rem;
+        margin-bottom: 15rem;
     }
 }
 
@@ -281,7 +282,6 @@
     .product-spec {
         margin-bottom: 2rem;
     }
-
 
 
 
