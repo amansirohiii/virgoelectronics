@@ -6,7 +6,7 @@ import Bg3 from "../../assests/images/Carousel/bg3.jpg";
 
 const Hero = () => {
   return (
-    <div className="hero-container">
+
       <div
         id="carouselExampleDark"
         className="carousel carousel-dark slide carousel-fade"
@@ -100,8 +100,8 @@ const Hero = () => {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
-     
-    </div>
+
+  
   );
 };
 
