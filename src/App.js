@@ -6,7 +6,7 @@ import Navbar from './components/Navbar/Navbar';
 // import FeaturedItem from './components/Featured/FeaturedItem';
 import './index.css';
 
-import { Routes, Route} from 'react-router-dom';
+import { Routes, Route, Navigate} from 'react-router-dom';
 import Home from '../src/components/pages/Home';
 import Categories from '../src/components/pages/Categories';
 import All from './components/Categories-pages/All';
@@ -41,6 +41,7 @@ const App=()=> {
         <Route index path="/" element={<Home setProgress={setProg}/>} />
 
         <Route path="products" element={<Categories setProgress={setProg}/>}>
+          <Route path="products" element={ <Navigate to="/products/all" /> } />
           <Route path="all" element={<All setProgress={setProg}/>} />
           <Route path="ceiling" element={<Ceiling setProgress={setProg}/>} />
           <Route path="cooler" element={<Cooler setProgress={setProg}/>} />
