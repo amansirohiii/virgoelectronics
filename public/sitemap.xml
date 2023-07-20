@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://www.virgoelectronics.com/</loc>
+    <lastmod>2023-07-20T18:13:57+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Products -->
+  <url>
+    <loc>https://www.virgoelectronics.com/products/all</loc>
+    <lastmod>2023-07-20T18:13:57+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.virgoelectronics.com/products</loc>
+    <lastmod>2023-07-20T18:13:57+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- About and Contact -->
+  <url>
+    <loc>https://www.virgoelectronics.com/about</loc>
+    <lastmod>2023-07-20T18:13:57+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.virgoelectronics.com/contact</loc>
+    <lastmod>2023-07-20T18:13:57+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Product Categories -->
+
+  <url>
+    <loc>https://www.virgoelectronics.com/products/ceiling</loc>
+    <lastmod>2023-07-20T18:13:57+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.virgoelectronics.com/products/cooler</loc>
+    <lastmod>2023-07-20T18:13:57+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.virgoelectronics.com/products/pedestal</loc>
+    <lastmod>2023-07-20T18:13:57+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.virgoelectronics.com/products/heating</loc>
+    <lastmod>2023-07-20T18:13:57+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.virgoelectronics.com/products/iron</loc>
+    <lastmod>2023-07-20T18:13:57+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.virgoelectronics.com/products/exhaust</loc>
+    <lastmod>2023-07-20T18:13:57+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.virgoelectronics.com/products/madhani</loc>
+    <lastmod>2023-07-20T18:13:57+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Add more URLs for other pages on the website as needed -->
+
+</urlset>

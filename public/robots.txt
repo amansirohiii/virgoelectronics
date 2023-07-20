@@ -1,2 +1,4 @@
-https://www.virgoelectronics.com/
 User-agent: *
+Disallow:
+
+Sitemap: https://virgoelectronics.com/sitemap.xml
