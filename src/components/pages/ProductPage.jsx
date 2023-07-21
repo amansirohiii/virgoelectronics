@@ -16,66 +16,34 @@ function ProductPage(props) {
   const renderSpecifications = () => {
     const itemId = parseInt(id);
 
-    if (itemId >= 1 && itemId <= 7) {
+    if (itemId >= 8 && itemId <= 18) {
       return (
-        <><div className="specifications">
-          <div className="spec">
-            <p className="spec-title">Color:</p>
-            <p className="title-desc">{item[0].color}</p>
-          </div>
-          <div className="spec">
-            <p className="spec-title">Sweep:</p>
-            <p className="title-desc">{item[0].sweep}</p>
-          </div>
-          <div className="spec">
-            <p className="spec-title">Bearing:</p>
-            <p className="title-desc">{item[0].bearing}</p>
-          </div>
-          </div>
-        </>
-      );
-    } else if (itemId >= 8 && itemId <= 18) {
-      return (
-        <>
         <div className="specifications">
-          <div className="spec">
-            <p className="spec-title">Size:</p>
-            <p className="title-desc">{item[0].size}</p>
-          </div>
-          <div className="spec">
-            <p className="spec-title">Motor:</p>
-            <p className="title-desc">{item[0].motor}</p>
-          </div>
-          <div className="spec">
-            <p className="spec-title">Tank Capacity:</p>
-            <p className="title-desc">{item[0].capacity}</p>
-          </div>
+        <div className="spec">
+          <p className="spec-title">Size:</p>
+          <p className="title-desc">{item[0].size}</p>
+        </div>
+        <div className="spec">
+          <p className="spec-title">Motor:</p>
+          <p className="title-desc">{item[0].motor}</p>
+        </div>
+        <div className="spec">
+          <p className="spec-title">Tank Capacity:</p>
+          <p className="title-desc">{item[0].capacity}</p>
+        </div>
 </div>
-        </>
       );
-    } else if (itemId >= 19 && itemId <= 20) {
+    } else {
+      return (
+
       <div className="hide-spec"></div>
-      return null;
-    }
-    else if (itemId >= 21 && itemId <= 22) {
-      <div className="hide-spec"></div>
-      return null;
-    }
-    else if (itemId >= 23 && itemId <= 24) {
-      <div className="hide-spec"></div>
-      return null;
-    }
-    else if (itemId >= 25 && itemId <= 27) {
-      <div className="hide-spec"></div>
-      return null;
-    }
-    else if (itemId >= 28 && itemId <= 100) {
-      <div className="hide-spec"></div>
-      return null;
+      // return null;
+
+      );
     }
 
 
-    return null; // Return null if no specifications match the item ID
+
   };
 
 
