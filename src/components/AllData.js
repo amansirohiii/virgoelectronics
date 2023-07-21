@@ -2,7 +2,7 @@ import Ceiling1 from "../assests/images/Ceiling/ceiling1.webp";
 import Ceiling2 from "../assests/images/Ceiling/ceiling2.webp";
 import Ceiling3 from "../assests/images/Ceiling/ceiling3.webp";
 import Ceiling4 from "../assests/images/Ceiling/ceiling4.webp";
-// import Ceiling5 from "../assests/images/Ceiling/ceiling5.webp";
+import Ceiling5 from "../assests/images/Ceiling/ceiling5.png";
 // import Ceiling6 from "../assests/images/Ceiling/ceiling6.webp";
 import Ceiling7 from "../assests/images/Ceiling/ceiling7.webp";
 import Cooler1 from "../assests/images/Cooler/cooler1.webp";
