@@ -2,8 +2,8 @@ import Ceiling1 from "../assests/images/Ceiling/ceiling1.webp";
 import Ceiling2 from "../assests/images/Ceiling/ceiling2.webp";
 import Ceiling3 from "../assests/images/Ceiling/ceiling3.webp";
 import Ceiling4 from "../assests/images/Ceiling/ceiling4.webp";
-import Ceiling5 from "../assests/images/Ceiling/ceiling5.webp";
-import Ceiling6 from "../assests/images/Ceiling/ceiling6.webp";
+// import Ceiling5 from "../assests/images/Ceiling/ceiling5.webp";
+// import Ceiling6 from "../assests/images/Ceiling/ceiling6.webp";
 import Ceiling7 from "../assests/images/Ceiling/ceiling7.webp";
 import Cooler1 from "../assests/images/Cooler/cooler1.webp";
 import Cooler2 from "../assests/images/Cooler/cooler2.webp";
@@ -43,21 +43,21 @@ export const items = [
     id: 2,
     category: "ceiling",
     img: Ceiling2,
-    description: "Bahar Deco",
+    description: "Era Plus",
     otherImgs: [],
     specs: "Color: Brown, Ivory\nSweep: 1200mm\nBearing: Double Ball Bearing\nBlade: Heavy Duty\nWinding: Full Copper\n-:Decorative Trims on Blades & Motor",
-    color: "Brown, Ivory",
-    sweep: "1200mm",
-    bearing: "Double Ball Bearing",
+    color: "",
+    sweep: "",
+    bearing: "",
   },
   {
     id: 3,
     category: "ceiling",
     img: Ceiling3,
-    description: "Flora Lagon Voilet",
+    description: "Sportz",
     otherImgs: [],
-    specs: "Color: Brown, Ivory\nSweep: 1200mm\nBearing: Double Ball Bearing\nBlade: Heavy Duty\nWinding: Full Copper\n-:Easy Clean & Dust\nUnique Paint Combination ",
-    color: "Voilet",
+    specs: "Color: Blue, Brown, Ivory\nSweep: 1200mm\nBearing: Double Ball Bearing\nBody: All Aluminium Die Cast\nBlade: Precisely balanced Aluminium Blades\nWinding: Full Copper\n-:Easy Clean & Dust\n-:Unique Paint Combination\n-:Decorative Trims on Blades & Motor ",
+    color: "",
     sweep: "",
     bearing: "",
   },
@@ -65,9 +65,9 @@ export const items = [
     id: 4,
     category: "ceiling",
     img: Ceiling4,
-    description: "Ceiling 4",
+    description: "Asta",
     otherImgs: [],
-    specs: "Color: Brown, Ivory\nSweep: 1200mm\nBearing: Double Ball Bearing\nBlade: Heavy Duty\nWinding: Full Copper",
+    specs: "Color: Brown, Ivory\nSweep: 1200mm\nBearing: Double Ball Bearing\nBody: All Aluminium Die Cast\nBlade: Precisely balanced Aluminium Blades\nWinding: Full Copper\n-:Decorative Trims on Blades & Motor",
     color: "",
     sweep: "",
     bearing: "",
@@ -78,9 +78,9 @@ export const items = [
     id: 5,
     category: "ceiling",
     img: Ceiling5,
-    description: "Ceiling 5",
+    description: "Sportz Plus",
     otherImgs: [],
-    specs: "Color: Brown, Ivory\nSweep: 1200mm\nBearing: Double Ball Bearing\nBlade: Heavy Duty\nWinding: Full Copper ",
+    specs: "Color: Brown, Ivory, Beige, Blue\nSweep: 1200mm\nBearing: Double Ball Bearing\nBody: All Aluminium Die Cast\nBlade: Precisely balanced Aluminium Blades\nWinding: Full Copper\n-:Decorative Trims on Blades & Motor ",
     color: "",
   sweep: "",
     bearing: "",
@@ -88,25 +88,25 @@ export const items = [
 
 
 
-  {
-    id: 6,
-    category: "ceiling",
-    img: Ceiling6,
-    description: "Ceiling 6",
-    otherImgs: [],
-    specs: "Color: Brown, Ivory\nSweep: 1200mm\nBearing: Double Ball Bearing\nBlade: Heavy Duty\nWinding: Full Copper",
-    color: "Wood",
-    sweep: "45kg",
-    bearing: "250cm x 60cm",
-  },
+  // {
+  //   id: 6,
+  //   category: "ceiling",
+  //   img: Ceiling6,
+  //   description: "Ceiling 6",
+  //   otherImgs: [],
+  //   specs: "Color: Brown, Ivory\nSweep: 1200mm\nBearing: Double Ball Bearing\nBlade: Heavy Duty\nWinding: Full Copper",
+  //   color: "Wood",
+  //   sweep: "45kg",
+  //   bearing: "250cm x 60cm",
+  // },
 
   {
     id: 7,
     category: "ceiling",
     img: Ceiling7,
-    description: "Figo",
+    description: "Magna",
     otherImgs: [],
-    specs: "Color: Matte Green, Pearl Ivory, Golden Brown, Silver Blue\nSweep: 900 / 1050 / 1200 / 1400mm\nBearing: Double Ball Bearing\nBody: All Aluminium Die Cast\nBlade: Precisely balanced Aluminium Blades\nPower: Low Consumption\nWinding: Full Copper ",
+    specs: "Color: Matte Green, Pearl Ivory, Golden Brown, Silver Blue\nSweep: 1200\nBearing: Double Ball Bearing\nBody: All Aluminium Die Cast\nBlade: Precisely balanced Aluminium Blades\nPower: Low Consumption\nWinding: Full Copper\n-:Decorative Trims on Blades & Motor ",
   color: "",
     sweep: "",
     bearing: "",
