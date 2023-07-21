@@ -106,7 +106,7 @@ export const items = [
     img: Ceiling7,
     description: "Magna",
     otherImgs: [],
-    specs: "Color: Matte Green, Pearl Ivory, Golden Brown, Silver Blue\nSweep: 1200\nBearing: Double Ball Bearing\nBody: All Aluminium Die Cast\nBlade: Precisely balanced Aluminium Blades\nPower: Low Consumption\nWinding: Full Copper\n-:Decorative Trims on Blades & Motor ",
+    specs: "Color: Pearl Ivory, Golden Brown, Silver Blue\nSweep: 1200\nBearing: Double Ball Bearing\nBody: All Aluminium Die Cast\nBlade: Precisely balanced Aluminium Blades\nPower: Low Consumption\nWinding: Full Copper\n-:Decorative Trims on Blades & Motor ",
   color: "",
     sweep: "",
     bearing: "",

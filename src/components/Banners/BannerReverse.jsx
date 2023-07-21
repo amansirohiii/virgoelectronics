@@ -32,7 +32,7 @@ function BannerReverse({ title, text, img }) {
             <div className="text">
               <h2>{title}</h2>
               <p>{text}</p>
-              <Link onClick={() => window.scrollTo(0, 0)} to="products/cooler">
+              <Link onClick={() => window.Top(0, 0)} to="products/ceiling">
                 <button>Shop now</button>
               </Link>
             </div>
