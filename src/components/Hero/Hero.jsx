@@ -43,7 +43,7 @@ const Hero = () => {
             data-bs-interval="3000"
           >
             <img
-              src={Bg1}
+              src={Bg2}
               className="d-block w-100 img-fluid"
               alt="coolers"
             />
@@ -54,7 +54,7 @@ const Hero = () => {
           </div>
           <div className="carousel-item" data-bs-interval="3000">
             <img
-              src={Bg2}
+              src={Bg1}
               className="d-block w-100 img-fluid"
               alt="ceiling fans"
             />
@@ -101,7 +101,7 @@ const Hero = () => {
         </button>
       </div>
 
-  
+
   );
 };
 
