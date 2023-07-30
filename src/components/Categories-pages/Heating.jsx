@@ -6,6 +6,9 @@ export default function Heater(props) {
   useEffect(() => {
     props.setProgress(100)
   }, [])
+  useEffect(() => {
+    document.title = 'Heater & Immersion - Virgo Electronics';
+  }, []);
 
   return (
     <>

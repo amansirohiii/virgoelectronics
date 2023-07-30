@@ -6,6 +6,9 @@ function All(props) {
   useEffect(() => {
     props.setProgress(100)
   }, [])
+  useEffect(() => {
+    document.title = 'All Products - Virgo Electronics';
+  }, []);
   return (
     <>
       <CategoriesItem />

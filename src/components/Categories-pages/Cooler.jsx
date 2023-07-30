@@ -6,6 +6,9 @@ export default function Cooler(props) {
   useEffect(() => {
     props.setProgress(100)
   }, [])
+  useEffect(() => {
+    document.title = 'Cooler - Virgo Electronics';
+  }, []);
 
   return (
     <>

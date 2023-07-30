@@ -6,6 +6,9 @@ export default function Exhaust(props) {
   useEffect(() => {
     props.setProgress(100)
   }, [])
+  useEffect(() => {
+    document.title = 'Exhaust Fans - Virgo Electronics';
+  }, []);
 
   return (
     <>

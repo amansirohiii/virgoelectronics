@@ -43,12 +43,12 @@ const App=()=> {
         <Route path="products" element={<Categories setProgress={setProg}/>}>
           <Route path="products" element={ <Navigate to="/products/all" /> } />
           <Route path="all" element={<All setProgress={setProg}/>} />
-          <Route path="ceiling" element={<Ceiling setProgress={setProg}/>} />
+          <Route path="ceiling-fans" element={<Ceiling setProgress={setProg}/>} />
           <Route path="cooler" element={<Cooler setProgress={setProg}/>} />
-          <Route path="pedestal" element={<Pedestal setProgress={setProg}/>} />
+          <Route path="pedestal-fans" element={<Pedestal setProgress={setProg}/>} />
           <Route path="heating" element={<Heating setProgress={setProg}/>} />
-          <Route path="iron" element={<Immersion setProgress={setProg}/>} />
-          <Route path="exhaust" element={<Exhaust setProgress={setProg}/>} />
+          <Route path="electric-iron" element={<Immersion setProgress={setProg}/>} />
+          <Route path="exhaust-fans" element={<Exhaust setProgress={setProg}/>} />
           <Route path="madhani" element={<Madhani setProgress={setProg}/>} />
         </Route>
         <Route path='*' element={<PageNotFound />}/>

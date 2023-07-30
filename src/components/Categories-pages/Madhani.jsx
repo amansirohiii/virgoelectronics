@@ -6,6 +6,9 @@ export default function Madhani(props) {
   useEffect(() => {
     props.setProgress(100)
   }, [])
+  useEffect(() => {
+    document.title = 'Madhani - Virgo Electronics';
+  }, []);
 
   return (
     <>
