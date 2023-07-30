@@ -15,15 +15,15 @@ export default function Footer() {
               <a href="/" className="link-1">
                 Home
               </a>
-              <a href="/products/all">Products</a>
-              <a href="/about">About</a>
-              <a href="/contact">Enquiry</a>
+              <a href="/products/all" aria-label="All Products">Products</a>
+              <a href="/about" aria-label="About">About</a>
+              <a href="/contact" aria-label="Enquiry">Enquiry</a>
             </p>
 
             <div className="social-media">
               <a
                 href="https://instagram.com/virgoelectronics"
-                className="circle"
+                className="circle" aria-label="Instagram link"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +39,7 @@ export default function Footer() {
                   ></path>
                 </svg>
               </a>
-              <a href="https://facebook.com" className="circle">
+              <a href="https://facebook.com" className="circle" aria-label="Facebook link">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
@@ -54,7 +54,7 @@ export default function Footer() {
                   ></path>
                 </svg>
               </a>
-              <a href="https://youtube.com" className="circle">
+              <a href="https://youtube.com" className="circle" aria-label="Youtube link">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
