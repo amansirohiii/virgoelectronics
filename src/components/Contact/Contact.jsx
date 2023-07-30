@@ -29,13 +29,34 @@ export default function Contact() {
     message: false,
   });
 
-  // New function to handle input changes and remove errors
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
+  const handleNameChange = (e) => {
+    const value = e.target.value;
+    setName(value);
+    setFormErrors((prevErrors) => ({ ...prevErrors, name: value.trim() === "" }));
+  };
+
+  const handleEmailChange = (e) => {
+    const value = e.target.value;
+    setEmail(value);
     setFormErrors((prevErrors) => ({
       ...prevErrors,
-      [name]: value.trim() === "",
+      email: value.trim() === "" || !isValidEmail(value),
     }));
+  };
+
+  const handleMobileChange = (e) => {
+    const value = e.target.value;
+    setMobile(value);
+    setFormErrors((prevErrors) => ({
+      ...prevErrors,
+      mobile: value.trim() === "" || !isValidMobile(value),
+    }));
+  };
+
+  const handleMessageChange = (e) => {
+    const value = e.target.value;
+    setMessage(value);
+    setFormErrors((prevErrors) => ({ ...prevErrors, message: value.trim() === "" }));
   };
 
   const handleDismiss = () => {
@@ -45,7 +66,7 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Perform form validation
-    let errors = {
+    const errors = {
       name: name.trim() === "",
       email: email.trim() === "" || !isValidEmail(email),
       mobile: mobile.trim() === "" || !isValidMobile(mobile),
@@ -112,39 +133,39 @@ export default function Contact() {
           <h2>Send us a Message</h2>
           <form onSubmit={handleSubmit} noValidate>
             <div className={`form-field ${formErrors.name ? "error" : ""}`}>
+              {/* <label htmlFor="name">Name</label> */}
               <input
                 type="text"
                 placeholder="Name"
                 id="name"
-                name="name"
                 value={name}
-                onChange={handleInputChange}
+                onChange={handleNameChange}
               />
               {formErrors.name && (
                 <span className="error-message">Please enter your name</span>
               )}
             </div>
             <div className={`form-field ${formErrors.email ? "error" : ""}`}>
+              {/* <label htmlFor="email">Email</label> */}
               <input
                 type="email"
                 placeholder="Email"
                 id="email"
-                name="email"
                 value={email}
-                onChange={handleInputChange}
+                onChange={handleEmailChange}
               />
               {formErrors.email && (
                 <span className="error-message">Please enter a valid email</span>
               )}
             </div>
             <div className={`form-field ${formErrors.mobile ? "error" : ""}`}>
+              {/* <label htmlFor="mobile">Mobile</label> */}
               <input
                 type="tel"
                 placeholder="Mobile"
                 id="mobile"
-                name="mobile"
                 value={mobile}
-                onChange={handleInputChange}
+                onChange={handleMobileChange}
               />
               {formErrors.mobile && (
                 <span className="error-message">Please enter a valid mobile number</span>
@@ -152,22 +173,20 @@ export default function Contact() {
             </div>
             <div className={`form-field ${formErrors.message ? "error" : ""}`}>
               <div className="textarea-container">
+                {/* <label htmlFor="message">Message</label> */}
                 <textarea
                   id="message"
                   placeholder="Message"
                   rows="5"
-                  name="message"
                   value={message}
-                  onChange={handleInputChange}
-                />
+                  onChange={handleMessageChange}
+                ></textarea>
               </div>
               {formErrors.message && (
                 <span className="error-message">Please enter your message</span>
               )}
             </div>
-            <button className="btnn" type="submit">
-              Send
-            </button>
+            <button className="btnn" type="submit">Send</button>
             {submissionStatus && (
               <div
                 className={`submission-message ${
@@ -177,14 +196,20 @@ export default function Contact() {
                 {submissionStatus === "success" ? (
                   <>
                     Your message has been sent successfully!
-                    <button className="dismiss-button" onClick={handleDismiss}>
+                    <button
+                      className="dismiss-button"
+                      onClick={handleDismiss}
+                    >
                       <i className="fas fa-times"></i>
                     </button>
                   </>
                 ) : (
                   <>
                     Sorry, an error occurred while sending your message. Please try again later.
-                    <button className="dismiss-button" onClick={handleDismiss}>
+                    <button
+                      className="dismiss-button"
+                      onClick={handleDismiss}
+                    >
                       <i className="fas fa-times"></i>
                     </button>
                   </>
