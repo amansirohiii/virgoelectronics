@@ -3,6 +3,7 @@
   align-items: center;
   flex-direction: column;
     margin-top: 7rem;
+    margin-bottom: 4rem;
   }
 .not_found_container svg{
   width: 100%;
@@ -21,9 +22,16 @@
   }
 .not_found_container h5{
   margin-top: 0;
-  margin-bottom: 4rem;
-  font-size: 16px;
+  margin-bottom: 2rem;
+  font-size: 1rem;
 }
+.homee{
+  color: #ff0000;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  }
 
 
 

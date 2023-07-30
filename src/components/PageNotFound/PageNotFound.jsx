@@ -1,5 +1,5 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./PageNotFound.css";
 
 export default function PageNotFound() {
@@ -1744,6 +1744,8 @@ export default function PageNotFound() {
       </div>
       <h1>404</h1>
       <h5>You seems to be lost in space</h5>
-    </div>
+      <Link onClick={() => window.top(0, 0)} to="/">
+              <span className="homee">Back to Home</span>
+            </Link>    </div>
   );
 }
