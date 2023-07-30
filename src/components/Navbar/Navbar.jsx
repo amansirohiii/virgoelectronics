@@ -36,7 +36,7 @@ const Navbar = () => {
         {" "}
         <div className="container-fluid">
           {" "}
-          <a className="navbar-brand" href="/">
+          <a className="navbar-brand" href="/" aria-label="logo">
             {" "}
             <img src={Logo} alt="" style={{ height: "5rem" }} />{" "}
           </a>{" "}
