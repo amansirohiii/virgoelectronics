@@ -33,26 +33,28 @@ function CategoriesHeader() {
             <h3>{btnName}</h3>
           </div>
           <div className="filter-btns">
-            <Link to="all" onClick={() => setBtnName()}>
+            <Link to="all">
               <button>All</button>
             </Link>
-            <Link to="ceiling-fans" onClick={() => setBtnName()}>
+            <Link to="ceiling-fans">
               <button>Ceiling</button>
             </Link>
-            <Link to="cooler" onClick={() => setBtnName()}>
+            <Link to="cooler">
               <button>Cooler</button>
             </Link>
-            <Link to="pedestal-fans" onClick={() => setBtnName()}><button>Pedestal</button>
+            <Link to="pedestal-fans"
+            ><button>Pedestal</button>
             </Link>
-            <Link to="exhaust-fans" onClick={() => setBtnName()}>
+            <Link to="exhaust-fans" >
               <button>Exhaust Fan</button>
             </Link>
-            <Link to="heating" onClick={() => setBtnName()}><button>Heating</button>
+            <Link to="heating" >
+              <button>Heating</button>
             </Link>
-            <Link to="electric-iron" onClick={() => setBtnName()}>
+            <Link to="electric-iron" >
               <button>Electric Iron</button>
             </Link>
-            <Link to="madhani" onClick={() => setBtnName()}>
+            <Link to="madhani" >
               <button>Madhani</button>
             </Link>
           </div>

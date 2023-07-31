@@ -32,13 +32,13 @@ function BannerReverse({ title, text, img }) {
             <div className="text">
               <h2>{title}</h2>
               <p>{text}</p>
-              <Link onClick={() => window.Top(0, 0)} to="products/ceiling-fans">
+              <Link onClick={() => window.Top(0, 0)} to="products/cooler">
                 <button>Shop now</button>
               </Link>
             </div>
           </div>
           <div className="img-side">
-            <img src={img} alt="banner" />
+            <img src={img} alt="banner cooler" />
           </div>
         </div>
       </div>
