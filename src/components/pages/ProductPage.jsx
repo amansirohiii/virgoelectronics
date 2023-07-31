@@ -9,9 +9,33 @@ function ProductPage(props) {
   useEffect(() => {
     props.setProgress(100);
   }, []);
+  const getCategoryName = (category) => {
+    // Replace these mappings with the actual category names you want to display
+    const categoryMap = {
+      ceiling: "Ceiling Fans",
+      cooler: "Coolers",
+      pedestal: "Pedestal Fans",
+      exhaust: "Exhaust Fans",
+      heating: "Heater & Immersion",
+      iron: "Electric Iron",
+      madhani: "Madhani",
+
+    };
+
+    return categoryMap[category] || "All Products";
+  };
+
+
 
   const { id } = useParams();
   const item = items.filter((item) => item.id === parseInt(id));
+  if (item) {
+    const categoryName = getCategoryName(item[0].category);
+    const websiteName = "Virgo Electronics";
+
+    // Set the page title to "productname - category name - website name"
+    document.title = `${item[0].description} - ${categoryName} - ${websiteName}`;
+  };
 
   const renderSpecifications = () => {
     const itemId = parseInt(id);
