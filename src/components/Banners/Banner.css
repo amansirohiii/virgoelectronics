@@ -54,7 +54,7 @@
     height: 100%;
     object-fit: contain;
     mix-blend-mode:multiply;
-    
+
 }
 
 .text button {
@@ -76,12 +76,13 @@
 }
 
 .banner {
-    opacity: 0;
-    transition: opacity 0.5s ease-in;
+    opacity: 1;
+    transform: translateY(2rem); /* Initial position below the screen */
+    transition: transform 0.5s ease-in; /* Add transform transition */
   }
 
   .banner.show {
-    opacity: 1;
+    transform: translateY(0); /* Final position at its original position */
   }
 
 
