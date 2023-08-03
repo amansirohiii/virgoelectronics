@@ -11,6 +11,7 @@ function CategoriesItem() {
     <>
       <div className="proud-container">
         <div className="container">
+        <h1 style={{ display: 'none' }}>Madhani Manufacturer in Ghaziabad</h1>
           <div className="products-grid">
             {filteredItems.map((item) => (
               <div key={item.id} className="product normal">
@@ -19,12 +20,13 @@ function CategoriesItem() {
                     <div className="image-placeholder" style={{ height: "100%" }} />
                     <LazyLoadImage
                       src={item.img}
-                      alt="product1"
+                      alt={item.description}
                       effect="blur"
                     />
                   </div>
                   <div className="product-details">
-                    <p>{item.description}</p>
+                  <h2 className="seo-h2">{item.description}</h2>
+                    {/* <p>{item.description}</p> */}
                     {/* <p className="item-price">{item.price}$</p> */}
                   </div>
                 </Link>

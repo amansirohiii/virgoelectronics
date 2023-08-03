@@ -36,3 +36,15 @@ body {
   margin: 0 auto;
   padding: 0 19px;
 }
+.seo-text{
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+.seo-h2{
+  font-size: 1.5rem;
+  /* padding: 1rem; */
+  color: black;
+  text-align: center;
+  font-weight: 600;
+}

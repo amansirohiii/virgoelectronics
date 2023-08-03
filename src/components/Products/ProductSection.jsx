@@ -10,8 +10,6 @@ import ExhaustIcon from "../../assests/images/Icons/exhaust.png";
 import IronIcon from "../../assests/images/Icons/iron.png";
 import MadhaniIcon from "../../assests/images/Icons/madhani.png";
 
-
-
 const ProductSection = () => {
   const products = [
     { name: "Ceiling Fan", color: "#FF6384", icon: CeilingIcon, link: "/products/ceiling-fans" },
@@ -28,10 +26,10 @@ const ProductSection = () => {
       <h2 className="product-heading">Products</h2>
       <div className="product-circles">
         {products.map((product, index) => (
-          <Link onClick={() => window.Top(0, 0)} to={product.link} key={index} className="product-link">
+          <Link onClick={() => window.scrollTo(0, 0)} to={product.link} key={index} className="product-link">
             <div className="product-circle" >
               <img src={product.icon} alt={product.name} className="product-icon" />
-              {/* <span className="product-name">{product.name}</span> */}
+              <h4 className="seo-text">{product.name}</h4>
             </div>
           </Link>
         ))}

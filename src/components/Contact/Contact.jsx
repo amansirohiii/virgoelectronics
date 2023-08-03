@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Contact.css";
 import Gif from "../../assests/images/contact.gif";
 import emailjs from "emailjs-com";
+import { Helmet } from "react-helmet";
 
 export default function Contact() {
   const USER_ID = process.env.REACT_APP_USER_ID;
@@ -124,6 +125,15 @@ export default function Contact() {
   };
 
   return (
+    <>
+    <Helmet>
+      <title>Contact Us - Virgo Electronics</title>
+      <meta name="description" content="Contact us for any queries related to our products. We are always happy to help you."/>
+      <meta name="keywords" content="Contact Us, Virgo Electronics, Ghaziabad, Contact Us Virgo Electronics, Contact Us Ghaziabad, Contact Us Ghaziabad Virgo Electronics, Contact Us Virgo Electronics Ghaziabad, Contact Us Virgo, Virgo Contact"/>
+
+
+    </Helmet>
+    <h1 className="seo-text">Contact Us - Virgo Electronics</h1>
     <div className="contact-form-container">
       <div className="contact-form-content">
         <div className="gif-container">
@@ -220,5 +230,6 @@ export default function Contact() {
         </div>
       </div>
     </div>
+    </>
   );
 }
