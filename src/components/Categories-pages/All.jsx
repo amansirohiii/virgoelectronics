@@ -20,7 +20,7 @@ function All(props) {
 
         <meta
           name="keywords"
-          content="ceiling fans, coolers, pedestal fans, exhaust fans, heaters, immersion rods, madhanis, Virgo Electronics, Ghaziabad, energy-efficient, reliable products, cooling, heating"
+          content="ceiling fans, coolers, pedestal fans, exhaust fans, heaters, immersion rods, madhanis, Virgo Electronics, Ghaziabad, energy-efficient, reliable products, cooling, heating, manufacturer, ghaziabad"
         />
         </Helmet>
       <h1 className="seo-text">All Products - Virgo Electronics</h1>
