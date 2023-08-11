@@ -26,7 +26,7 @@ const ProductSection = () => {
       <h2 className="product-heading">Products</h2>
       <div className="product-circles">
         {products.map((product, index) => (
-          <Link onClick={() => window.scrollTo(0, 0)} to={product.link} key={index} className="product-link">
+          <Link onClick={() => window.Top(0, 0)} to={product.link} key={index} className="product-link">
             <div className="product-circle" >
               <img src={product.icon} alt={product.name} className="product-icon" />
               <h4 className="seo-text">{product.name}</h4>
