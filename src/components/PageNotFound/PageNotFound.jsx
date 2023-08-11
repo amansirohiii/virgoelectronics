@@ -1742,7 +1742,7 @@ export default function PageNotFound() {
           </g>
         </svg>
       </div>
-      <h1>404</h1>
+      <h1 className="seo-text">404</h1>
       <h5>You seems to be lost in space</h5>
       <Link onClick={() => window.top(0, 0)} to="/">
               <span className="backtohome">Back to Home</span>
