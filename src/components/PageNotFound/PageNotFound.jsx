@@ -1745,7 +1745,7 @@ export default function PageNotFound() {
       <h1>404</h1>
       <h5>You seems to be lost in space</h5>
       <Link onClick={() => window.top(0, 0)} to="/">
-              <span className="homee">Back to Home</span>
+              <span className="backtohome">Back to Home</span>
             </Link>    </div>
   );
 }
