@@ -14,7 +14,7 @@ import Ceiling from './components/Categories-pages/Ceiling';
 import Cooler from './components/Categories-pages/Cooler';
 import Pedestal from './components/Categories-pages/Pedestal';
 import Heating from './components/Categories-pages/Heating';
-import Immersion from './components/Categories-pages/Iron';
+import Iron from './components/Categories-pages/Iron';
 import ProductPage from '../src/components/pages/ProductPage';
 import Exhaust from './components/Categories-pages/Exhaust';
 import Madhani from './components/Categories-pages/Madhani';
@@ -47,7 +47,7 @@ const App=()=> {
           <Route path="cooler" element={<Cooler setProgress={setProg}/>} />
           <Route path="pedestal-fans" element={<Pedestal setProgress={setProg}/>} />
           <Route path="heating" element={<Heating setProgress={setProg}/>} />
-          <Route path="electric-iron" element={<Immersion setProgress={setProg}/>} />
+          <Route path="electric-iron" element={<Iron setProgress={setProg}/>} />
           <Route path="exhaust-fans" element={<Exhaust setProgress={setProg}/>} />
           <Route path="madhani" element={<Madhani setProgress={setProg}/>} />
         </Route>
