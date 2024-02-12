@@ -51,7 +51,7 @@ const App=()=> {
           <Route path="exhaust-fans" element={<Exhaust setProgress={setProg}/>} />
           <Route path="madhani" element={<Madhani setProgress={setProg}/>} />
         </Route>
-        <Route path='*' element={<PageNotFound />}/>
+        <Route path='*' element={<PageNotFound />} status={404} />
         <Route path="categories/product/:id" element={<ProductPage setProgress={setProg}/>} />
         <Route index path="contact" element={<Contact setProgress={setProg}/>} />
         <Route index path="about" element={<About setProgress={setProg}/>} />
